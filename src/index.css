@@ -149,7 +149,7 @@ img {
 
 @keyframes button-push {
   50% {
-    transform: scale(0.8);
+    transform: scale(0.9);
   }
   100% {
     transform: scale(1);
@@ -157,5 +157,5 @@ img {
 }
 
 .btn:hover {
-  animation: button-push 0.3s linear 1;
+  animation: button-push 0.7s linear 1;
 }

@@ -23,10 +23,12 @@
   font-size: 1.2rem;
   color: var(--title-color);
   font-weight: var(--font-bold);
+  transition: 0.3s;
 }
 
-.nav__link:hover{
-  color: rgb(252, 69, 69);
+.nav__link:hover {
+  /* color: hsl(43, 100%, 68%); */
+  color: red
 }
 
 .copyright {
