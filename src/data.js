@@ -2,6 +2,9 @@ export const Bio = {
   img: "../../public/Sanmit.jpeg",
   name: "Sanmit Suthar",
   description: "Hii..!! 👋🏻 Sanmit here",
+  about: [
+    "Fourth-year Computer Engineering student with a passion for coding and problem-solving, seeking to apply my technical skills and creativity to real-world projects.", "Experienced in Business Central AL language and Dynamics 365 solutions, including an internship at TripearlTech Private Limited.", "I have also worked on frontend technologies (HTML5, CSS3, tailwind , JavaScript, React JS and other JS libraries) and backend technologies (Node.js and Express.js) for several projects. Additionally, I have expertise in Data Structures and Algorithms (DSA) in Java.","Aspiring for a challenging career in Software Development to leverage my skills and experience for the best results."
+  ],
   github: "",
   resume: "",
   linkedIn: "",
@@ -159,25 +162,21 @@ export const education = [
 ];
 
 export const projects = [
-    {
-        id: 1,
-        title: "Project1",
-        description: "",
-        image: "",
-        tags: [
-            "React.js",
-            "Node.js",
-        ],
-        demo: "",
-        code: ""
-    }
-]
+  {
+    id: 1,
+    title: "Project1",
+    description: "",
+    image: "",
+    tags: ["React.js", "Node.js"],
+    demo: "",
+    code: "",
+  },
+];
 
 export const TimeLineData = [
-    { year: 2017, text: "Started my journey" },
-    { year: 2018, text: "Worked as a freelance developer" },
-    { year: 2019, text: "Founded JavaScript Mastery" },
-    { year: 2020, text: "Shared my projects with the world" },
-    { year: 2021, text: "Started my own platform" },
-  ];
-  
+  { year: 2017, text: "Started my journey" },
+  { year: 2018, text: "Worked as a freelance developer" },
+  { year: 2019, text: "Founded JavaScript Mastery" },
+  { year: 2020, text: "Shared my projects with the world" },
+  { year: 2021, text: "Started my own platform" },
+];
