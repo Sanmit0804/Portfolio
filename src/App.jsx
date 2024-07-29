@@ -5,7 +5,7 @@ import Home from "./components/home/Home";
 import About from "./components/about/About";
 import Services from "./components/services/Services";
 import Resume from "./components/resume/Resume";
-import Portfolio from "./components/portfolio/Portfolio";
+import Education from "./components/education/Education";
 import Pricing from "./components/pricing/Pricing";
 import Testimonials from "./components/testimonials/Testimonials";
 import Blog from "./components/blog/Blog";
@@ -18,9 +18,9 @@ function App() {
       <main className="main">
         <Home />
         <About />
+        <Education />
         <Services />
         <Resume />
-        <Portfolio />
         <Pricing />
         <Testimonials />
         <Blog />

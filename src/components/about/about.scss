@@ -1,6 +1,12 @@
+.about{
+  position: relative;
+  min-height: 100vh;
+}
+
 .about__container {
   grid-template-columns: 3fr 9fr;
   column-gap: 1.875rem;
+  margin-top: 1.5rem;
 }
 
 .about__data {
@@ -33,8 +39,9 @@
   row-gap: 1.25rem;
 }
 
-.section__title {
-  margin-bottom: 2rem;
+.section__title__about {
+  // margin-bottom: 2rem;
+  // margin-top: 1.5rem;
 }
 
 // section {
@@ -61,7 +68,7 @@
 //   }
 // }
 
-p {
+.about__about {
   background: linear-gradient(45deg, red, orange, yellow, green, blue, indigo, violet, red);
   background-size: 0% 100%;
   background-repeat: no-repeat;

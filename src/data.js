@@ -139,7 +139,7 @@ export const education = [
     date: "Nov 2020 - May 2024",
     grade: "7.79 CGPA",
     desc: "",
-    degree: "Bachelor of Engineering - BE, Computer Engineering",
+    degree: "Bachelor of Engineering - Computer Engineering",
   },
   {
     id: 1,
