@@ -15,7 +15,7 @@ function Education() {
           <div className="content">
             <h2>
               <a href="https://www.svitvasad.ac.in/" target="_blank">
-                Sardar Vallabhbhai Patel Institue of Technology, Vasad
+                Sardar Vallabhbhai Patel Institute of Technology, Vasad
               </a>
             </h2>
             <p>Bachelor of Engineering - Computer Engineering</p>
