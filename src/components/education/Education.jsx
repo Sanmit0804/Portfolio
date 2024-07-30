@@ -2,6 +2,9 @@ import React from "react";
 import "./education.css";
 import { education } from "../../data";
 
+// For future updates
+// https://nodlik.github.io/react-pageflip/
+
 function Education() {
   return (
     <>
