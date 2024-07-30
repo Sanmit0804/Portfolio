@@ -1,0 +1,19 @@
+.pdf__viewer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 100vh;
+}
+
+object{
+    width: 50rem;
+    height: 40rem;
+}
+
+@media (max-width: 600px) {
+    object{
+        width: 40rem;
+        height: 30rem;
+    }
+    
+}
