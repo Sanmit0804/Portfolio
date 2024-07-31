@@ -12,7 +12,6 @@ const Home = () => {
   return (
     <section className="home container" id="home">
       <div className="intro">
-
         <img src={Bio.img} alt="" className="home__img" />
         <h1 className="home__name">{Bio.name}</h1>
         <span className="home__education">{Bio.description}</span>

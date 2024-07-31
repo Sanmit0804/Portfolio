@@ -10,7 +10,7 @@ function Education() {
     <>
       <section id="education">
         <h2 className="section__title__education">Education</h2>
-        <div className="card">
+        <div className="card__education">
           <div className="cover">
             <img src="../../public/education.png" alt="education" />
             <img src="../../public/education.png" alt="education" />

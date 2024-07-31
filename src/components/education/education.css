@@ -22,7 +22,7 @@ a {
   top: 8.5vh;
 }
 
-.card {
+.card__education {
   position: relative;
   width: 90%; /* Adjust width for smaller screens */
   max-width: 350px; /* Max width for larger screens */
@@ -87,13 +87,13 @@ a {
   rotate: rotateY(1);
 }
 
-.card:hover {
+.card__education:hover {
   transform: perspective(2000px) rotateZ(-10deg);
   /* box-shadow: 10px 0 20px rgba(0, 0, 0, 0.4),
   inset 20px 0 50px rgba(0, 0, 0, 0.4); */
 }
 
-.card:hover .cover {
+.card__education:hover .cover {
   transform: rotateY(-135deg);
   box-shadow: 10px 0 20px rgba(0, 0, 0, 0.4);
 }
