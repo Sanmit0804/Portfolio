@@ -31,7 +31,7 @@ function Education() {
             </h2>
             <p>{education[1].degree}</p>
             <p>{education[1].grade}</p>
-            <p>{education[0].date}</p>
+            <p>{education[1].date}</p>
             <h2>
               <a href="https://utkarshvidyalaya.org/" target="_blank">
                 Utkarsh Vidhyalaya, Vadodara
@@ -39,7 +39,7 @@ function Education() {
             </h2>
             <p>{education[2].degree}</p>
             <p>{education[2].grade}</p>
-            <p>{education[0].date}</p>
+            <p>{education[2].date}</p>
           </div>
         </div>
       </section>
