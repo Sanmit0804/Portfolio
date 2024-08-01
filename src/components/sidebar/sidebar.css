@@ -1,3 +1,4 @@
+/* Default styles for the sidebar */
 .aside {
   position: fixed;
   left: 0;
@@ -27,8 +28,12 @@
 }
 
 .nav__link:hover {
-  /* color: hsl(43, 100%, 68%); */
-  color: red
+  color: red;
+}
+
+.nav__logo .nav__logo__img {
+  /* border: 2px solid black; */
+  border-radius: 20px;
 }
 
 .copyright {
@@ -36,4 +41,35 @@
   font-size: var(--small-font-size);
   transform: rotate(-180deg);
   writing-mode: vertical-rl;
+}
+
+/* Responsive styles for mobile devices */
+@media (max-width: 768px) {
+  .aside {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    top: auto;
+    width: 100%;
+    min-height: 50px;
+    flex-direction: row;
+    padding: 1rem;
+    border-top: 1px solid rgba(0, 0, 0, 0.05);
+    border-right: none;
+    justify-content: center; /* Center the navigation links */
+  }
+
+  .nav__list {
+    flex-direction: row;
+    column-gap: 3rem;
+    row-gap: 0;
+  }
+
+  .nav__link {
+    font-size: 1rem;
+  }
+
+  .nav__logo, .copyright {
+    display: none;
+  }
 }

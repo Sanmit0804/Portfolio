@@ -12,12 +12,14 @@
   "dependencies": {
     "@material-tailwind/react": "^2.1.9",
     "@splinetool/react-spline": "^4.0.0",
+    "framer-motion": "^11.3.20",
     "jquery": "^3.7.1",
     "page-flip": "^2.0.7",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-pageflip": "^2.0.3",
     "react-pdf": "^9.1.0",
+    "react-router-dom": "^6.25.1",
     "scrollreveal": "^4.0.9",
     "turn.js": "^1.0.5"
   },

@@ -3,7 +3,10 @@ export const Bio = {
   name: "Sanmit Suthar",
   description: "Hii..!! 👋🏻 Sanmit here",
   about: [
-    "Fourth-year Computer Engineering student with a passion for coding and problem-solving, seeking to apply my technical skills and creativity to real-world projects.", "Experienced in Business Central AL language and Dynamics 365 solutions, including an internship at TripearlTech Private Limited.", "I have also worked on frontend technologies (HTML5, CSS3, tailwind , JavaScript, React JS and other JS libraries) and backend technologies (Node.js and Express.js) for several projects. Additionally, I have expertise in Data Structures and Algorithms (DSA) in Java.","Aspiring for a challenging career in Software Development to leverage my skills and experience for the best results."
+    "Fourth-year Computer Engineering student with a passion for coding and problem-solving, seeking to apply my technical skills and creativity to real-world projects.",
+    "Experienced in Business Central AL language and Dynamics 365 solutions, including an internship at TripearlTech Private Limited.",
+    "I have also worked on frontend technologies (HTML5, CSS3, tailwind , JavaScript, React JS and other JS libraries) and backend technologies (Node.js and Express.js) for several projects. Additionally, I have expertise in Data Structures and Algorithms (DSA) in Java.",
+    "Aspiring for a challenging career in Software Development to leverage my skills and experience for the best results.",
   ],
   github: "",
   resume: "",
@@ -163,13 +166,20 @@ export const education = [
 
 export const projects = [
   {
-    id: 1,
-    title: "Project1",
-    description: "",
-    image: "",
-    tags: ["React.js", "Node.js"],
-    demo: "",
-    code: "",
+    title: "FastFingers",
+    description: `A dynamic typing test application that improves typing speed and accuracy. Built with JavaScript, "FastFinger" provides random text challenges and measures WPM and accuracy.`,
+    image: "/projects/FastFingers.jpg",
+    tags: ["HTML5", "CSS3", "JavaScript"],
+    demo: "https://sanmit0804.github.io/FastFingers/FastFingers/",
+    code: "https://github.com/Sanmit0804/FastFingers",
+  },
+  {
+    title: "Weather App with Dynamic Background",
+    description: `This weather application not only provides accurate weather information but also enhances user experience with dynamic background changes based on the selected city. The application is built using HTML, CSS, and JavaScript.`,
+    image: "/projects/WeatherApp.png",
+    tags: ["HTML5", "CSS3", "JavaScript"],
+    demo: "https://sanmit0804.github.io/Weather-Application-with-Dynamic-Background/",
+    code: "https://github.com/Sanmit0804/Weather-Application-with-Dynamic-Background",
   },
 ];
 

@@ -7,6 +7,11 @@
   margin: auto;
 }
 
+/* .article-title{
+  margin-left: 5rem;
+  margin-top: 200px;
+} */
+
 .mapbox {
   position: relative;
   height: 250px;

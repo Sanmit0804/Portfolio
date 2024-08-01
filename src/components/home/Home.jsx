@@ -3,7 +3,6 @@ import "./home.css";
 import Me from "../../assets/avatar-1.svg";
 import { Bio } from "../../data";
 import HeaderSocials from "./HeaderSocials";
-import ScrollDown from "./ScrollDown";
 import Shapes from "./Shapes";
 // import Spline from "@splinetool/react-spline";
 // <Spline scene="../../public/scene.splinecode" />
@@ -17,12 +16,11 @@ const Home = () => {
         <span className="home__education">{Bio.description}</span>
 
         <HeaderSocials></HeaderSocials>
-
-        <a href="#resume" className="btn">
+        
+        <a href="/resume" className="btn">
           Resume
         </a>
 
-        <ScrollDown></ScrollDown>
       </div>
     </section>
   );

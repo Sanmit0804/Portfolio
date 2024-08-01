@@ -44,7 +44,7 @@
   color: hsl(43, 100%, 68%);
 }
 
-.scroll__down {
+/* .scroll__down {
   position: absolute;
   bottom: 2.5rem;
   left: 0;
@@ -62,6 +62,7 @@
   width: 1.25rem;
   margin: auto;
   margin-top: 0.75rem;
+  margin-bottom: 2rem;
   border-radius: 1rem;
   position: relative;
 }
@@ -91,7 +92,7 @@
   left: 50%;
   transform: translateX(-50%);
   animation: ani-mouse 2s linear infinite;
-}
+} */
 
 /* .shapes {
   position: absolute;
