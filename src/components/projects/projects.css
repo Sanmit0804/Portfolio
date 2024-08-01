@@ -30,7 +30,6 @@ body {
   grid-template-columns: repeat(3, 1fr);
   column-gap: 1.875rem;
   row-gap: 1.875rem;
-  /* Ensures consistent spacing */
   padding: 0 1rem;
   box-sizing: border-box;
 }
@@ -38,7 +37,6 @@ body {
 @media (max-width: 800px) {
   .project__container {
     grid-template-columns: 1fr;
-    /* Removes spacing on small screens */
     padding: 0;
     width: 60%;
     margin: auto;
@@ -52,7 +50,6 @@ body {
   background: #fff;
   display: flex;
   flex-direction: column;
-  /* Ensures card maintains size and doesn't grow with content */
   min-height: 300px;
 }
 
@@ -64,8 +61,8 @@ body {
 
 .project__img {
   width: 100%;
-  height: 200px; /* Fixed height for images to avoid changing card size */
-  object-fit: cover; /* Ensures images fill the container */
+  height: 200px;
+  object-fit: cover;
   transition: transform 0.3s;
 }
 
@@ -91,7 +88,7 @@ body {
 .project__details {
   padding: 1.25rem;
   text-align: center;
-  flex: 1; /* Ensures details section grows to fill space */
+  flex: 1;
   display: flex;
   flex-direction: column;
 }
@@ -102,9 +99,11 @@ body {
 }
 
 .project__meta {
-  display: flex;
-  justify-content: start;
-  column-gap: 0.6rem;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3; /* Number of lines to show */
+  overflow: hidden;
+  text-overflow: ellipsis;
   font-size: 0.875rem;
   color: #8b88b1;
 }
@@ -114,10 +113,12 @@ body {
   color: rgb(110, 110, 253);
   margin-bottom: 1rem;
   padding: 3px;
+  white-space: pre-wrap;
+  word-break: break-word;
 }
 
 .btn__project {
-  margin-top: auto; /* Ensures buttons stick to the bottom */
+  margin-top: auto;
   display: flex;
   align-items: center;
   justify-content: center;
