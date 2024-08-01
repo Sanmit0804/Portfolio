@@ -12,8 +12,8 @@ function Education() {
         <h2 className="section__title__education">Education</h2>
         <div className="card__education">
           <div className="cover">
-            <img src="../../public/education.png" alt="education" />
-            <img src="../../public/education.png" alt="education" />
+            <img src="/education.png" alt="education" />
+            <img src="/education.png" alt="education" />
           </div>
           <div className="content">
             <h2>

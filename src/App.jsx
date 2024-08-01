@@ -11,6 +11,13 @@ import Education from "./components/education/Education";
 import Contact from "./components/contact/Contact";
 import Projects from "./components/projects/Projects";
 
+import { pdfjs } from 'react-pdf';
+
+pdfjs.GlobalWorkerOptions.workerSrc = new URL(
+  'pdfjs-dist/build/pdf.worker.min.mjs',
+  import.meta.url,
+).toString();
+
 function App() {
   return (
     <>

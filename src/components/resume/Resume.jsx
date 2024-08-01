@@ -1,27 +1,21 @@
 import React from "react";
-import pdf from "./Sanmit_Resume.pdf";
 import "./resume.css";
-
-// import { Document, Page, pdfjs } from "react-pdf"; // Import from react-pdf
-
-// pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`;
+import PdfComp from "./PdfComp";
+import pdf from "/Sanmit_Resume.pdf";
 
 const Resume = () => {
   return (
-    // ------- using Object tag (HTML approach)
-    <div className="pdf__viewer" id="resume">
-      <object data={pdf} type="application/pdf">
-        <p>
-          Alternative text - include a link <a href={pdf}>to the PDF!</a>
-        </p>
-      </object>
-    </div>
-
-    // <div>
-    //   <Document file={pdf}>
-    //     <Page pageNumber={1} width={600} />
-    //   </Document>
-    // </div>
+    <section className="pdf__viewer" id="resume">
+      <PdfComp />
+      <div className="btn-container">
+        <a href={pdf} download="Sanmit_Resume.pdf" className="btn">
+          Download Resume
+        </a>
+        <a href={pdf} target="_blank" rel="noopener noreferrer" className="btn">
+          View Resume
+        </a>
+      </div>
+    </section>
   );
 };
 
