@@ -16,6 +16,7 @@ import Projects from "./components/projects/Projects";
 import Contact from "./components/contact/Contact";
 
 
+
 const pageVariants = {
   initial: {
     opacity: 0,
@@ -121,6 +122,7 @@ const AnimatedRoutes = () => {
 };
 
 function App() {
+
   return (
     <Router>
       <Sidebar />
