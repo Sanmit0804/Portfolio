@@ -1,10 +1,14 @@
 import React, { useEffect } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import "./sidebar.css";
 import { driver } from "driver.js";
 import "driver.js/dist/driver.css";
 
 const Sidebar = () => {
+  const location = useLocation(); // Get the current location
+
+  const isActive = (path) => location.pathname === path ? 'active' : '';
+
   useEffect(() => {
     const driverObj = driver({
       popoverClass: 'driverjs-theme',
@@ -78,42 +82,42 @@ const Sidebar = () => {
 
   return (
     <aside className="aside">
-      <nav className="nav">
-        <div className="nav__menu">
-          <ul className="nav__list">
-            <li className="nav__item">
-              <Link to="/" className="nav__link" id="home_id">
-                <i className="icon-home"></i>
-              </Link>
-            </li>
-            <li className="nav__item">
-              <Link to="/about" className="nav__link" id="about_id">
-                <i className="icon-user-following"></i>
-              </Link>
-            </li>
-            <li className="nav__item">
-              <Link to="/education" className="nav__link" id="education_id">
-                <i className="icon-graduation"></i>
-              </Link>
-            </li>
-            <li className="nav__item">
-              <Link to="/projects" className="nav__link" id="projects_id">
-                <i className="icon-layers"></i>
-              </Link>
-            </li>
-            <li className="nav__item">
-              <Link to="/resume" className="nav__link" id="resume_id">
-                <i className="icon-briefcase"></i>
-              </Link>
-            </li>
-            <li className="nav__item">
-              <Link to="/contact" className="nav__link" id="contact_id">
-                <i className="icon-bubble"></i>
-              </Link>
-            </li>
-          </ul>
-        </div>
-      </nav>
+    <nav className="nav">
+    <div className="nav__menu">
+      <ul className="nav__list">
+        <li className={`nav__item ${isActive("/")}`}>
+          <Link to="/" className="nav__link" id="home_id">
+            <i className="icon-home"></i>
+          </Link>
+        </li>
+        <li className={`nav__item ${isActive("/about")}`}>
+          <Link to="/about" className="nav__link" id="about_id">
+            <i className="icon-user-following"></i>
+          </Link>
+        </li>
+        <li className={`nav__item ${isActive("/education")}`}>
+          <Link to="/education" className="nav__link" id="education_id">
+            <i className="icon-graduation"></i>
+          </Link>
+        </li>
+        <li className={`nav__item ${isActive("/projects")}`}>
+          <Link to="/projects" className="nav__link" id="projects_id">
+            <i className="icon-layers"></i>
+          </Link>
+        </li>
+        <li className={`nav__item ${isActive("/resume")}`}>
+          <Link to="/resume" className="nav__link" id="resume_id">
+            <i className="icon-briefcase"></i>
+          </Link>
+        </li>
+        <li className={`nav__item ${isActive("/contact")}`}>
+          <Link to="/contact" className="nav__link" id="contact_id">
+            <i className="icon-bubble"></i>
+          </Link>
+        </li>
+      </ul>
+    </div>
+  </nav>
       <div className="nav__footer">
         <span className="copyright">&copy; 2024 - Sanmit</span>
       </div>
