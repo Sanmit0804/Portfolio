@@ -1,5 +1,10 @@
 import React from "react";
-import { BrowserRouter as Router, Route, Routes, useLocation } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Route,
+  Routes,
+  useLocation,
+} from "react-router-dom";
 import { AnimatePresence, motion } from "framer-motion";
 import "./app.css";
 import Sidebar from "./components/sidebar/Sidebar";
@@ -9,6 +14,7 @@ import Resume from "./components/resume/Resume";
 import Education from "./components/education/Education";
 import Projects from "./components/projects/Projects";
 import Contact from "./components/contact/Contact";
+
 
 const pageVariants = {
   initial: {
@@ -108,20 +114,7 @@ const AnimatedRoutes = () => {
             </motion.div>
           }
         />
-        <Route
-          path="/contact"
-          element={
-            <motion.div
-              initial="initial"
-              animate="in"
-              exit="out"
-              variants={pageVariants}
-              transition={pageTransition}
-            >
-              <Contact />
-            </motion.div>
-          }
-        />
+        <Route path="/contact" element={<Contact />} />
       </Routes>
     </AnimatePresence>
   );

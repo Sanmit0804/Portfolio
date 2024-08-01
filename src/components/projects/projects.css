@@ -11,10 +11,18 @@ body {
 }
 
 .section__title {
-  margin-bottom: 2rem;
   text-align: center;
   font-size: 2rem;
   color: #333;
+}
+
+.section__title2 {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.highlight__text {
+  color: var(--first-color);
 }
 
 .project__container {
@@ -22,51 +30,42 @@ body {
   grid-template-columns: repeat(3, 1fr);
   column-gap: 1.875rem;
   row-gap: 1.875rem;
+  /* Ensures consistent spacing */
+  padding: 0 1rem;
+  box-sizing: border-box;
 }
 
 @media (max-width: 800px) {
   .project__container {
-    /* grid-template-columns: repeat(2, 1fr); */
     grid-template-columns: 1fr;
-  }
-  .project__card {
-    margin: 10px;
-    height: 300px;
-    width: 300px;
-  }
-  .project__meta span {
-    display: none;
-  }
-  .project__dot {
-    display: none;
+    /* Removes spacing on small screens */
+    padding: 0;
+    width: 60%;
+    margin: auto;
   }
 }
 
-/* @media (max-width: 768px) {
-  .project__container {
-    grid-template-columns: 1fr;
-  }
-  .project__meta{
-    display: none;
-  }
-} */
-
 .project__card {
-  margin: 10px auto;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
   overflow: hidden;
   background: #fff;
+  display: flex;
+  flex-direction: column;
+  /* Ensures card maintains size and doesn't grow with content */
+  min-height: 300px;
 }
 
 .project__thumb {
   position: relative;
   overflow: hidden;
+  flex-shrink: 0;
 }
 
 .project__img {
   width: 100%;
-  height: auto;
+  height: 200px; /* Fixed height for images to avoid changing card size */
+  object-fit: cover; /* Ensures images fill the container */
   transition: transform 0.3s;
 }
 
@@ -92,6 +91,9 @@ body {
 .project__details {
   padding: 1.25rem;
   text-align: center;
+  flex: 1; /* Ensures details section grows to fill space */
+  display: flex;
+  flex-direction: column;
 }
 
 .project__title {
@@ -115,6 +117,7 @@ body {
 }
 
 .btn__project {
+  margin-top: auto; /* Ensures buttons stick to the bottom */
   display: flex;
   align-items: center;
   justify-content: center;

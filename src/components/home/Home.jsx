@@ -17,7 +17,7 @@ const Home = () => {
 
         <HeaderSocials></HeaderSocials>
         
-        <a href="/resume" className="btn">
+        <a href="resume" className="btn">
           Resume
         </a>
 

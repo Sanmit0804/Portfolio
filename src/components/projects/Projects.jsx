@@ -5,7 +5,8 @@ import { projects } from "../../data";
 const Projects = () => {
   return (
     <section className="project container section" id="projects">
-      <h2 className="section__title">Projects</h2>
+      <h2 className="section__title">My Recent <span className="highlight__text">Works</span></h2>
+      <h4 className="section__title2">Here are a few projects I've worked on recently</h4>
       <div className="project__container grid">
         {projects.map((project, index) => (
           <div key={index} className="project__card">
@@ -29,7 +30,7 @@ const Projects = () => {
               </div>
               <div className="btn__project">
                 <a href={project.demo} target="_blank" className="btn">Demo</a>
-                <a href={project.code} target="_blank" className="btn">Code</a>
+                <a href={project.code} target="_blank" className="btn">GitHub</a>
               </div>
             </div>
           </div>

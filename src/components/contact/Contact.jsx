@@ -20,7 +20,7 @@ function Contact() {
     <>
       <div id="contact" className="contact">
         <article class="contact" data-page="contact">
-{  /*        <header>
+          {/*        <header>
             <h2 class="h2 article-title">Contact</h2>
           </header>  */}
 
@@ -64,15 +64,7 @@ function Contact() {
             </div>
           </section>   */}
 
-          <div
-            className="visme_d"
-            data-title="Untitled Project"
-            data-url="4d64rzgz-untitled-project"
-            data-domain="forms"
-            data-full-page="false"
-            data-min-height="500px"
-            data-form-id="85891"
-          ></div>
+          <div class="visme_d" data-title="Untitled Project" data-url="4d64rzgz-untitled-project" data-domain="forms" data-full-page="false" data-min-height="500px" data-form-id="85891"></div>
         </article>
       </div>
     </>

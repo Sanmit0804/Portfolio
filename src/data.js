@@ -181,12 +181,28 @@ export const projects = [
     demo: "https://sanmit0804.github.io/Weather-Application-with-Dynamic-Background/",
     code: "https://github.com/Sanmit0804/Weather-Application-with-Dynamic-Background",
   },
-];
-
-export const TimeLineData = [
-  { year: 2017, text: "Started my journey" },
-  { year: 2018, text: "Worked as a freelance developer" },
-  { year: 2019, text: "Founded JavaScript Mastery" },
-  { year: 2020, text: "Shared my projects with the world" },
-  { year: 2021, text: "Started my own platform" },
+  {
+    title: "Thoughts - Your SocialApp",
+    description: `Thoughts is a social media application where users can register, log in, create posts, like posts, and update their profiles. This application is built using Node.js, Express, and MongoDB..`,
+    image: "/projects/Thoughts.png",
+    tags: ["Node.js", "Express", "MongoDB", "EJS", "bcrypt", "JWT", "Multer"],
+    demo: "https://thoughts-your-social-app.vercel.app/",
+    code: "https://github.com/Sanmit0804/Thoughts-YourSocialApp",
+  },
+  {
+    title: "Quiz Game",
+    description: `Quiz application facilitates the creation of multiple-choice questions with four answer options. Users receive immediate feedback on their selections, with correct answers highlighted in green and incorrect ones in red. Upon completion, the application provides a final score.`,
+    image: "/projects/Quiz.png",
+    tags: ["HTML5","CSS3","JavaScript"],
+    demo: "https://sanmit0804.github.io/Quiz-Application/",
+    code: "https://github.com/Sanmit0804/Quiz-Application",
+  },
+  {
+    title: "Todo List",
+    description: `This To-Do List app lets users manage tasks by categories like Personal, Work, and Shopping. It includes interactive features for toggling categories, adding tasks, and displaying tasks with dynamic updates based on category selection.`,
+    image: "/projects/Todo.png",
+    tags: ["HTML5","CSS3","JavaScript"],
+    demo: "https://sanmit0804.github.io/Todo-List/",
+    code: "https://github.com/Sanmit0804/Todo-List",
+  },
 ];

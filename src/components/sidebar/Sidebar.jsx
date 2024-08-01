@@ -43,6 +43,7 @@ const Sidebar = () => {
                 <i className="icon-bubble"></i>
               </Link>
             </li>
+
           </ul>
         </div>
       </nav>
