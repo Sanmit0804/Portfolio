@@ -14,6 +14,7 @@ import Resume from "./components/resume/Resume";
 import Education from "./components/education/Education";
 import Projects from "./components/projects/Projects";
 import Contact from "./components/contact/Contact";
+import Play from "./components/play/Play";
 
 
 const pageVariants = {
@@ -111,6 +112,20 @@ const AnimatedRoutes = () => {
               transition={pageTransition}
             >
               <Resume />
+            </motion.div>
+          }
+        />
+        <Route
+          path="/play"
+          element={
+            <motion.div
+              initial="initial"
+              animate="in"
+              exit="out"
+              variants={pageVariants}
+              transition={pageTransition}
+            >
+              <Play />
             </motion.div>
           }
         />
