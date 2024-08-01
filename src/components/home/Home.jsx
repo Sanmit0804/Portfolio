@@ -1,6 +1,6 @@
 import React from "react";
 import "./home.css";
-import Me from "../../assets/avatar-1.svg";
+import pdf from "/Sanmit_Resume.pdf";
 import { Bio } from "../../data";
 import HeaderSocials from "./HeaderSocials";
 import Shapes from "./Shapes";
@@ -16,11 +16,10 @@ const Home = () => {
         <span className="home__education">{Bio.description}</span>
 
         <HeaderSocials></HeaderSocials>
-        
-        <a href="resume" className="btn">
+
+        <a href={pdf} target="_blank" className="btn">
           Resume
         </a>
-
       </div>
     </section>
   );

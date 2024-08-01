@@ -76,10 +76,6 @@
 }
 
 /* Style for active navigation link */
-.nav__item.active .nav__link {
-  border-radius: 4px;
-  padding: 10px;
-}
 
 .nav__item.active .nav__link i {
   color: red;
