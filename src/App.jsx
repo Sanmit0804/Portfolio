@@ -15,7 +15,7 @@ import Education from "./components/education/Education";
 import Projects from "./components/projects/Projects";
 import Contact from "./components/contact/Contact";
 import Play from "./components/play/Play";
-
+import KursorComponent from "./components/kursor/KursorComponent";
 
 const pageVariants = {
   initial: {
@@ -135,15 +135,18 @@ const AnimatedRoutes = () => {
   );
 };
 
-function App() {
+// <KursorComponent></KursorComponent>
 
+function App() {
   return (
+    <>
     <Router>
-    <Sidebar />
-    <main className="main">
-        <AnimatedRoutes />
-      </main>
-    </Router>
+        <Sidebar />
+        <main className="main">
+          <AnimatedRoutes />
+        </main>
+      </Router>
+    </>
   );
 }
 

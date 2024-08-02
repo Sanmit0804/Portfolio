@@ -103,9 +103,9 @@
   left: 50%;
   transform: translateX(-50%);
   animation: ani-mouse 2s linear infinite;
-} */
+} 
 
-/* .shapes {
+.shapes {
   position: absolute;
   left: 0;
   top: 0;

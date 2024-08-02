@@ -21,25 +21,25 @@ function Education() {
                 Sardar Vallabhbhai Patel Institute of Technology, Vasad
               </a>
             </h2>
-            <p>{education[0].degree}</p>
-            <p>{education[0].grade}</p>
-            <p>{education[0].date}</p>
+            <p className="education__font">{education[0].degree}</p>
+            <p className="education__font">{education[0].grade}</p>
+            <p className="education__font">{education[0].date}</p>
             <h2>
               <a href="https://www.parthinstitute.org/" target="_blank">
                 Parth School, Vadodara
               </a>
             </h2>
-            <p>{education[1].degree}</p>
-            <p>{education[1].grade}</p>
-            <p>{education[1].date}</p>
+            <p className="education__font">{education[1].degree}</p>
+            <p className="education__font">{education[1].grade}</p>
+            <p className="education__font">{education[1].date}</p>
             <h2>
               <a href="https://utkarshvidyalaya.org/" target="_blank">
                 Utkarsh Vidhyalaya, Vadodara
               </a>
             </h2>
-            <p>{education[2].degree}</p>
-            <p>{education[2].grade}</p>
-            <p>{education[2].date}</p>
+            <p className="education__font">{education[2].degree}</p>
+            <p className="education__font">{education[2].grade}</p>
+            <p className="education__font">{education[2].date}</p>
           </div>
         </div>
       </section>

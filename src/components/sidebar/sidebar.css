@@ -78,7 +78,7 @@
 /* Style for active navigation link */
 
 .nav__item.active .nav__link i {
-  color: red;
+  color: var(--first-color);
 }
 
 /* ============ Dot animation ============= */
