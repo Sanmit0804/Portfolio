@@ -13,7 +13,7 @@ body {
 .section__title {
   text-align: center;
   font-size: 2rem;
-  color: #333;
+  color: var(--title-color);
 }
 
 .section__title2 {
@@ -47,7 +47,7 @@ body {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
   overflow: hidden;
-  background: #fff;
+  background: var(--body-color);
   display: flex;
   flex-direction: column;
   min-height: 300px;

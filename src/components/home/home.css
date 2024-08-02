@@ -12,12 +12,21 @@
 }
 
 .home__img {
+  display: block;
   height: 150px;
   width: 150px;
-  margin: auto;
+  margin: 0 auto;
   border-radius: 50%;
-  margin-bottom: 1.5rem;
+  margin-bottom: 2rem;
+  transition: box-shadow 0.3s ease; /* Smooth transition for shadow effect */
 }
+
+
+.home__img:hover {
+  box-shadow: rgba(255, 255, 0, 0.56) 0px 22px 70px 4px;
+  cursor: pointer;
+}
+
 
 .home__name {
   font-size: var(--h1-font-size);

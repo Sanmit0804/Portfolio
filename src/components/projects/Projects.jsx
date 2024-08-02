@@ -6,7 +6,7 @@ const Projects = () => {
   return (
     <section className="project container section" id="projects">
       <div >
-        <h2 className="section__title ">
+        <h3 className="section__title">
           My Recent{" "}
           <span className="highlight__text bounce-text">
             <span>W</span>
@@ -15,7 +15,7 @@ const Projects = () => {
             <span>k</span>
             <span>s</span>
           </span>
-        </h2>
+        </h3>
         <h4 className="section__title2">
           Here are a few projects I've worked on recently
         </h4>

@@ -9,7 +9,7 @@ function Education() {
   return (
     <>
       <section id="education">
-        <h2 className="section__title__education">Education</h2>
+        <h2 className="section__title__education ">My <span className="highlight__text bounce-text"><span>E</span><span>d</span><span>u</span><span>c</span><span>a</span><span>t</span><span>i</span><span>o</span><span>n</span></span></h2>
         <div className="card__education">
           <div className="cover">
             <img src="/education.png" alt="education" />

@@ -139,8 +139,8 @@ function App() {
 
   return (
     <Router>
-      <Sidebar />
-      <main className="main">
+    <Sidebar />
+    <main className="main">
         <AnimatedRoutes />
       </main>
     </Router>

@@ -3,6 +3,7 @@ import { Link, useLocation } from "react-router-dom";
 import "./sidebar.css";
 import { driver } from "driver.js";
 import "driver.js/dist/driver.css";
+import ThemeToggle from "../themeToggle/ThemeToggle";
 
 const Sidebar = () => {
   const location = useLocation(); // Get the current location
@@ -116,14 +117,17 @@ const Sidebar = () => {
                 <i className="icon-bubble"></i>
               </Link>
             </li>
-            <li className={`nav__item ${isActive("/play")}`}>
-              <Link to="/play" className="nav__link" id="play_id">
+            <li className={`nav__item ${isActive("/play")} play__component`}>
+              <Link to="/play" className="nav__link " id="play_id">
                 <div class="three-body">
                   <div class="three-body__dot"></div>
                   <div class="three-body__dot"></div>
                   <div class="three-body__dot"></div>
                 </div>
               </Link>
+            </li>
+            <li className={`nav__item`}>
+              <ThemeToggle />
             </li>
           </ul>
         </div>

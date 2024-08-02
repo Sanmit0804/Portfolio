@@ -2,23 +2,27 @@
 @tailwind components;
 @tailwind utilities; */
 
-
 /* ============== Google Fonts =================== */
 
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
 
 /* =========== Variables CSS =============*/
 :root {
-  /* ------- Colors --------------*/
-  /* --- Colur mode HSL(hue, saturation, lightness)  */
+  /* ------- Colors (Light Mode) --------------*/
   --first-color: hsl(353, 100%, 65%);
   --title-color: hsl(244, 24%, 26%);
   --text-color: hsl(244, 16%, 43%);
   --body-color: hsl(258, 60%, 98%);
   --container-color: #fff;
 
+  /* Dark Mode Colors */
+  --first-color-dark: hsl(353, 100%, 65%);
+  --title-color-dark: hsl(0, 0%, 100%);
+  --text-color-dark: hsl(0, 0%, 80%);
+  --body-color-dark: hsl(0, 0%, 10%);
+  --container-color-dark: hsl(0, 0%, 20%);
+
   /* ----------- Font and Typography ---------- */
-  /* .5rem = 8px |  1 rem = 16px */
   --body-font: "Rubik", sans-serif;
   --h1-font-size: 2.25rem;
   --h2-font-size: 1.5rem;
@@ -39,9 +43,19 @@
   --border-radius: 20px;
 }
 
+.dark-theme {
+  /* ------- Colors (Dark Mode) --------------*/
+  --first-color: var(--first-color-dark);
+  --title-color: var(--title-color-dark);
+  --text-color: var(--text-color-dark);
+  --body-color: var(--body-color-dark);
+  --container-color: var(--container-color-dark);
+}
+
+
 /* ========= Responsive Typography ============= */
 @media screen and (max-width: 1024px) {
-  :root{
+  :root {
     --h1-font-size: 1.5rem;
     --h2-font-size: 1.25rem;
     --h3-font-size: 1rem;
@@ -49,10 +63,24 @@
     --small-font-size: 0.813rem;
     --smaller-font-size: 0.75rem;
   }
-  
 }
 
 /* ============= Base ============ */
+
+
+.main {
+  margin-left: 110px;
+  padding: 0;
+  flex-grow: 1;
+  position: relative;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 800px){
+  .main{
+    margin-left: 0;
+  }
+}
 
 * {
   margin: 0;
@@ -165,7 +193,6 @@ img {
   animation: button-push 0.7s linear 1;
 }
 
-
 /* ========== Bounce Characters =========== */
 
 .bounce-text span {
@@ -179,10 +206,11 @@ img {
 }
 
 @keyframes bounce {
-  0%, 100% {
-      transform: translateY(0);
+  0%,
+  100% {
+    transform: translateY(0);
   }
   50% {
-      transform: translateY(-10px);
+    transform: translateY(-10px);
   }
 }
