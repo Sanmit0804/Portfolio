@@ -1,12 +1,7 @@
-import React, { useEffect } from "react";
+import React from "react";
 import "./preLoader.css";
-import { preLoaderAnim } from "../../assets/animation";
 
 const PreLoader = () => {
-  useEffect(() => {
-    preLoaderAnim();
-  }, []);
-
   return (
     <div className="preloader">
       <div className="banter-loader">

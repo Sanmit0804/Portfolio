@@ -6,11 +6,21 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
 
+/* ~~~~~~ For Selected text colours ~~~~~~~~~~~~~ */
 ::selection {
   color: var(--title-color);
   background: var(--first-color);
 }
 
+/* ~~~~~~ Custom Scrollbar ~~~~~~~~~~~~~ */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(transparent, var(--first-color));
+  border-radius: 6px;
+  transform: 2s ease;
+}
 
 /* =========== Variables CSS =============*/
 :root {
@@ -58,7 +68,6 @@
   --container-color: var(--container-color-dark);
 }
 
-
 /* ========= Responsive Typography ============= */
 @media screen and (max-width: 1024px) {
   :root {
@@ -73,7 +82,6 @@
 
 /* ============= Base ============ */
 
-
 .main {
   margin-left: 110px;
   padding: 0;
@@ -82,8 +90,8 @@
   overflow: hidden;
 }
 
-@media screen and (max-width: 800px){
-  .main{
+@media screen and (max-width: 800px) {
+  .main {
     margin-left: 0;
   }
 }

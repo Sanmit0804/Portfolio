@@ -53,11 +53,7 @@ const AnimatedRoutes = ({ setProgress }) => {
   return (
     <AnimatePresence mode="wait">
       <Routes location={location} key={location.pathname}>
-        <Route
-          path="/"
-          element={
-            <motion.div
-              initial="initial"
+        <Route path="/" element={<motion.div initial="initial"
               animate="in"
               exit="out"
               variants={pageVariants}
