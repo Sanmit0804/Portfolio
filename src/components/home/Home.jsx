@@ -9,7 +9,6 @@ import { Link } from "react-router-dom";
 const Home = () => {
   return (
     <>
-
       <section className="home container" id="home">
         <div className="intro ">
           <img src={Bio.img} alt="" className="home__img" />
@@ -19,7 +18,7 @@ const Home = () => {
             <span>n</span>
             <span>m</span>
             <span>i</span>
-            <span>t</span> <span>S</span>
+            <span>t</span> <span>&nbsp;</span><span>S</span>
             <span>u</span>
             <span>t</span>
             <span>h</span>

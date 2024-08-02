@@ -15,7 +15,8 @@ import Education from "./components/education/Education";
 import Projects from "./components/projects/Projects";
 import Contact from "./components/contact/Contact";
 import Play from "./components/play/Play";
-import LoadingBar from 'react-top-loading-bar';
+import LoadingBar from "react-top-loading-bar";
+import PreLoader from "./components/preLoader/PreLoader";
 
 const pageVariants = {
   initial: {
@@ -157,16 +158,31 @@ const AnimatedRoutes = ({ setProgress }) => {
 
 function App() {
   const [progress, setProgress] = useState(0);
+  const [preloader, setPreloader] = useState(true);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setPreloader(false);
+    }, 3000);
+  }, []);
 
   return (
     <>
-      <Router>
-        <LoadingBar color="red" progress={progress} onLoaderFinished={() => setProgress(0)} />
-        <Sidebar />
-        <main className="main">
-          <AnimatedRoutes setProgress={setProgress} />
-        </main>
-      </Router>
+      {preloader ? (
+        <PreLoader />
+      ) : (
+        <Router>
+          <LoadingBar
+            color="red"
+            progress={progress}
+            onLoaderFinished={() => setProgress(0)}
+          />
+          <Sidebar />
+          <main className="main">
+            <AnimatedRoutes setProgress={setProgress} />
+          </main>
+        </Router>
+      )}
     </>
   );
 }
