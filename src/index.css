@@ -164,3 +164,25 @@ img {
 .btn:hover {
   animation: button-push 0.7s linear 1;
 }
+
+
+/* ========== Bounce Characters =========== */
+
+.bounce-text span {
+  display: inline-block;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.bounce-text span:hover {
+  animation: bounce 0.6s ease;
+}
+
+@keyframes bounce {
+  0%, 100% {
+      transform: translateY(0);
+  }
+  50% {
+      transform: translateY(-10px);
+  }
+}

@@ -23,7 +23,9 @@ const About = () => {
   return (
     <>
       <section className="about container section" id="about">
+        <div className="bounce-text">
         <h2 className="section__title__about">About <span className="highlight__text">Me</span></h2>
+        </div>
 
         <div className="about__container grid">
           <img src={Image} alt="" className="about__img" />

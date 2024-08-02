@@ -10,9 +10,9 @@ import Shapes from "./Shapes";
 const Home = () => {
   return (
     <section className="home container" id="home">
-      <div className="intro">
+      <div className="intro bounce-text">
         <img src={Bio.img} alt="" className="home__img" />
-        <h1 className="home__name">{Bio.name}</h1>
+        <h1 className="home__name"><span>S</span><span>a</span><span>n</span><span>m</span><span>i</span><span>t</span> <span>S</span><span>u</span><span>t</span><span>h</span><span>a</span><span>r</span></h1>
         <span className="home__education">{Bio.description}</span>
 
         <HeaderSocials></HeaderSocials>
