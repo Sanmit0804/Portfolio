@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import {
   BrowserRouter as Router,
   Route,
@@ -15,7 +15,7 @@ import Education from "./components/education/Education";
 import Projects from "./components/projects/Projects";
 import Contact from "./components/contact/Contact";
 import Play from "./components/play/Play";
-import KursorComponent from "./components/kursor/KursorComponent";
+import LoadingBar from 'react-top-loading-bar';
 
 const pageVariants = {
   initial: {
@@ -39,8 +39,15 @@ const pageTransition = {
   duration: 0.5,
 };
 
-const AnimatedRoutes = () => {
+const AnimatedRoutes = ({ setProgress }) => {
   const location = useLocation();
+
+  useEffect(() => {
+    setProgress(70);
+    setTimeout(() => {
+      setProgress(100);
+    }, 1000);
+  }, [location.pathname, setProgress]);
 
   return (
     <AnimatePresence mode="wait">
@@ -129,21 +136,35 @@ const AnimatedRoutes = () => {
             </motion.div>
           }
         />
-        <Route path="/contact" element={<Contact />} />
+        <Route
+          path="/contact"
+          element={
+            <motion.div
+              initial="initial"
+              animate="in"
+              exit="out"
+              variants={pageVariants}
+              transition={pageTransition}
+            >
+              <Contact />
+            </motion.div>
+          }
+        />
       </Routes>
     </AnimatePresence>
   );
 };
 
-// <KursorComponent></KursorComponent>
-
 function App() {
+  const [progress, setProgress] = useState(0);
+
   return (
     <>
-    <Router>
+      <Router>
+        <LoadingBar color="red" progress={progress} onLoaderFinished={() => setProgress(0)} />
         <Sidebar />
         <main className="main">
-          <AnimatedRoutes />
+          <AnimatedRoutes setProgress={setProgress} />
         </main>
       </Router>
     </>

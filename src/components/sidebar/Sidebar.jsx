@@ -129,6 +129,7 @@ const Sidebar = () => {
             <li className={`nav__item`}>
               <ThemeToggle />
             </li>
+
           </ul>
         </div>
       </nav>

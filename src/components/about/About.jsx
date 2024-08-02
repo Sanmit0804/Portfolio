@@ -20,11 +20,18 @@ const About = () => {
     // scrollReveal.reveal(".about__img", { delay: 150, origin: "left" });
   }, []);
 
+
   return (
     <>
       <section className="about container section" id="about">
         <div className="">
-        <h2 className="section__title__about">About <span className="highlight__text bounce-text"><span>M</span><span>e</span></span></h2>
+          <h2 className="section__title__about">
+            About{" "}
+            <span className="highlight__text bounce-text">
+              <span>M</span>
+              <span>e</span>
+            </span>
+          </h2>
         </div>
 
         <div className="about__container grid">

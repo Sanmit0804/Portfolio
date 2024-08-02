@@ -24,6 +24,7 @@
     "react-pageflip": "^2.0.3",
     "react-pdf": "^9.1.0",
     "react-router-dom": "^6.25.1",
+    "react-top-loading-bar": "^2.3.1",
     "scrollreveal": "^4.0.9",
     "styled-components": "^6.1.12",
     "turn.js": "^1.0.5"
