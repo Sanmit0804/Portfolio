@@ -16,6 +16,8 @@ export const Bio = {
   facebook: "",
   discord: "https://discord.com/channels/@me",
   leetcode: "https://leetcode.com/u/Sanmit0804/",
+  emailSend: "mailto:sanmitsuthar3@gmail.com",
+  email: "sanmitsuthar3@gmail.com",
 };
 
 export const skills = [
