@@ -2,8 +2,8 @@ import React, { useEffect } from "react";
 import "./about.scss";
 import Image from "/programmer.jpg";
 import { Bio, skills } from "../../data";
-import gsap from "gsap";
-import styled from "styled-components";
+// import gsap from "gsap";
+// import styled from "styled-components";
 // Skills
 import { RiReactjsLine } from "react-icons/ri";
 import { SiMongodb } from "react-icons/si";
@@ -13,7 +13,7 @@ import { FaHtml5 } from "react-icons/fa";
 import { FaCss3Alt } from "react-icons/fa";
 import { IoLogoJavascript } from "react-icons/io5";
 import { FaJava } from "react-icons/fa";
-import { RiTailwindCssFill } from "react-icons/ri";
+// import { RiTailwindCssFill } from "react-icons/ri";
 import { SiExpress } from "react-icons/si";
 // Find me here
 import { FaGithub } from "react-icons/fa";
