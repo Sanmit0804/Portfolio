@@ -173,7 +173,7 @@ function App() {
       ) : (
         <Router>
           <LoadingBar
-            color="red"
+            color= "var(--first-color)"
             progress={progress}
             onLoaderFinished={() => setProgress(0)}
           />
