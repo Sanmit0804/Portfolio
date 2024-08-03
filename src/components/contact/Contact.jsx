@@ -3,6 +3,7 @@ import "./contact.css";
 import "./copyButton.css";
 import { Bio } from "../../data";
 import { FaCopy } from "react-icons/fa";
+import HeaderSocials from '../home/HeaderSocials';
 
 const copyToClipboard = (text, setCopyStatus) => {
   navigator.clipboard.writeText(text).then(
@@ -132,6 +133,7 @@ function Contact() {
                 Copied
               </span>
             </button>
+            <HeaderSocials></HeaderSocials>
           </div>
           <div className="contact__form">
             <div className="card">

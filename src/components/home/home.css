@@ -50,7 +50,7 @@
 }
 
 .home__social-link:hover {
-  color: hsl(43, 100%, 68%);
+  color: var(--first-color);
 }
 
 /* ============== for shapes and scroll ============= */
