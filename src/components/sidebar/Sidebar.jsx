@@ -119,10 +119,10 @@ const Sidebar = () => {
             </li>
             <li className={`nav__item ${isActive("/play")} play__component`}>
               <Link to="/play" className="nav__link " id="play_id">
-                <div class="three-body">
-                  <div class="three-body__dot"></div>
-                  <div class="three-body__dot"></div>
-                  <div class="three-body__dot"></div>
+                <div className="three-body">
+                  <div className="three-body__dot"></div>
+                  <div className="three-body__dot"></div>
+                  <div className="three-body__dot"></div>
                 </div>
               </Link>
             </li>

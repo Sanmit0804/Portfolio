@@ -19,12 +19,12 @@ function Contact() {
   return (
     <>
       <div id="contact" className="contact">
-        <article class="contact" data-page="contact">
+        <article className="contact" data-page="contact">
           {/*        <header>
-            <h2 class="h2 article-title">Contact</h2>
+            <h2 className="h2 article-title">Contact</h2>
           </header>  */}
 
-          {/*  <section class="mapbox" data-mapbox>
+          {/*  <section className="mapbox" data-mapbox>
             <figure>
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d117331.54939426926!2d72.5631460538414!3d23.220845994088105!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395c2b987c6d6809%3A0xf86f06a7873e0391!2sGandhinagar%2C%20Gujarat!5e0!3m2!1sen!2sin!4v1722445865236!5m2!1sen!2sin"
@@ -64,7 +64,7 @@ function Contact() {
             </div>
           </section>   */}
 
-          <div class="visme_d" data-title="Untitled Project" data-url="4d64rzgz-untitled-project" data-domain="forms" data-full-page="false" data-min-height="500px" data-form-id="85891"></div>
+          <div className="visme_d" data-title="Untitled Project" data-url="4d64rzgz-untitled-project" data-domain="forms" data-full-page="false" data-min-height="500px" data-form-id="85891"></div>
         </article>
       </div>
     </>

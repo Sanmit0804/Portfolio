@@ -50,6 +50,8 @@ const AnimatedRoutes = ({ setProgress }) => {
     }, 1000);
   }, [location.pathname, setProgress]);
 
+
+
   return (
     <AnimatePresence mode="wait">
       <Routes location={location} key={location.pathname}>
@@ -161,6 +163,8 @@ function App() {
       setPreloader(false);
     }, 3000);
   }, []);
+
+  
 
   return (
     <>
