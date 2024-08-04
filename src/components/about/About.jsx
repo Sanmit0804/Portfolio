@@ -125,7 +125,7 @@ const About = () => {
                 <span className="highlight__text">
                   MERN stack web developer.
                 </span>
-                And also worked with some of the JS libraries like Socket.io,
+                I have also worked with some of the JS libraries like Socket.io,
                 Electron, JWT (JSON Web Tokens). Additionally, I have expertise
                 in Data Structures and Algorithms{" "}
                 <span className="highlight__text">(DSA) in Java.</span>
