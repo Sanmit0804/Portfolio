@@ -22,21 +22,21 @@ const Home = () => {
           <Tilt options={tiltOptions} className="tilt">
             <img src={Bio.img} alt="" className="home__img" />
           </Tilt>
-          <h1 className="home__name bounce-text ">
-            <span>S</span>
-            <span>a</span>
-            <span>n</span>
-            <span>m</span>
-            <span>i</span>
-            <span>t</span> <span>&nbsp;</span>
-            <span>S</span>
-            <span>u</span>
-            <span>t</span>
-            <span>h</span>
-            <span>a</span>
-            <span>r</span>
+          <h1 className="home__name bounce-text">
+          <span>{Bio.name.charAt(0)}</span>
+          <span>{Bio.name.charAt(1)}</span>
+          <span>{Bio.name.charAt(2)}</span>
+          <span>{Bio.name.charAt(3)}</span>
+          <span>{Bio.name.charAt(4)}</span>
+          <span>{Bio.name.charAt(5)}</span> <span>&nbsp;</span>
+          <span>{Bio.name.charAt(6)}</span>
+          <span>{Bio.name.charAt(7)}</span>
+          <span>{Bio.name.charAt(8)}</span>
+          <span>{Bio.name.charAt(9)}</span>
+          <span>{Bio.name.charAt(10)}</span>
+          <span>{Bio.name.charAt(11)}</span>
+          <span>{Bio.name.charAt(12)}</span>
           </h1>
-
           <HeaderSocials></HeaderSocials>
 
           <div className="btn__project">

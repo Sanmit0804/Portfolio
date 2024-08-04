@@ -1,5 +1,5 @@
 export const Bio = {
-  img: "./Sanmit.jpeg",
+  img: "/Sanmit.jpeg",
   name: "Sanmit Suthar",
   description: "Hii..!! 👋🏻 Sanmit here",
   about: [
