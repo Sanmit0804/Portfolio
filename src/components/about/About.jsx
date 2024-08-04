@@ -123,7 +123,7 @@ const About = () => {
               <p className="about__about">
                 I am a{" "}
                 <span className="highlight__text">
-                  MERN stack web developer.
+                  MERN stack web developer. 
                 </span>
                 I have also worked with some of the JS libraries like Socket.io,
                 Electron, JWT (JSON Web Tokens). Additionally, I have expertise
