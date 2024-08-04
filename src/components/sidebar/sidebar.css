@@ -46,6 +46,7 @@
 /* Responsive styles for mobile devices */
 @media (max-width: 768px) {
   .aside {
+    margin-left: 1.3rem;
     position: fixed;
     left: 0;
     bottom: 0;
@@ -71,6 +72,9 @@
 
   .nav__logo,
   .copyright {
+    display: none;
+  }
+  .play__component {
     display: none;
   }
 }
@@ -185,6 +189,7 @@
     opacity: 0.8;
   }
 }
+
 
 
 /* ============== theme toggle 2 =========== */
