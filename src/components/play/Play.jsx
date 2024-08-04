@@ -5,7 +5,7 @@ import "./play.css";
 function Play() {
   return (
     <section className="play" id="play">
-      <Spline scene="../../public/scene.splinecode" />
+      <Spline scene="/scene.splinecode" />
     </section>
   );
 }
