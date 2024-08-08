@@ -2,15 +2,11 @@ import React, { useState, useEffect } from "react";
 import "./themeToggle.css";
 
 const ThemeToggle = () => {
-  // Use system preference or default to light mode
-  const getInitialTheme = () => {
-    return window.matchMedia("(prefers-color-scheme: dark)").matches;
-  };
-
-  const [isDarkMode, setIsDarkMode] = useState(getInitialTheme());
+  // Default to dark mode
+  const [isDarkMode, setIsDarkMode] = useState(true);
 
   useEffect(() => {
-    // Apply the theme when component mounts or when isDarkMode changes
+    // Apply the theme when the component mounts or when isDarkMode changes
     document.documentElement.className = isDarkMode ? "dark-theme" : "";
   }, [isDarkMode]);
 
