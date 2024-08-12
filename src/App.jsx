@@ -14,7 +14,7 @@ import Resume from "./components/resume/Resume";
 import Education from "./components/education/Education";
 import Projects from "./components/projects/Projects";
 import Contact from "./components/contact/Contact";
-import Play from "./components/play/Play";
+import Play from "./components/play/Play"; // Play now handles its own loading
 import LoadingBar from "react-top-loading-bar";
 import PreLoader from "./components/preLoader/PreLoader";
 
@@ -50,12 +50,14 @@ const AnimatedRoutes = ({ setProgress }) => {
     }, 1000);
   }, [location.pathname, setProgress]);
 
-
-
   return (
     <AnimatePresence mode="wait">
       <Routes location={location} key={location.pathname}>
-        <Route path="/" element={<motion.div initial="initial"
+        <Route
+          path="/"
+          element={
+            <motion.div
+              initial="initial"
               animate="in"
               exit="out"
               variants={pageVariants}
@@ -164,8 +166,6 @@ function App() {
     }, 3000);
   }, []);
 
-  
-
   return (
     <>
       {preloader ? (
@@ -173,7 +173,7 @@ function App() {
       ) : (
         <Router>
           <LoadingBar
-            color= "var(--first-color)"
+            color="var(--first-color)"
             progress={progress}
             onLoaderFinished={() => setProgress(0)}
           />
