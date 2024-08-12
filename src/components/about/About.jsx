@@ -113,7 +113,7 @@ const About = () => {
                 Hii..!! 👋🏻 <span className="highlight__text">Sanmit</span> here,
                 Computer Engineering student with a passion for coding and
                 problem-solving, from{" "}
-                <span className="highlight__text">Gandhinagar.</span>
+                <span className="highlight__text">India.</span>
               </p>
               <p className="about__about">
                 Experienced in Business Central AL language and{" "}
