@@ -116,11 +116,6 @@ const About = () => {
                 <span className="highlight__text">India.</span>
               </p>
               <p className="about__about">
-                Experienced in Business Central AL language and{" "}
-                <span className="highlight__text">Dynamics 365</span> solutions,
-                including an internship at TripearlTech Private Limited.
-              </p>
-              <p className="about__about">
                 I am a{" "}
                 <span className="highlight__text">
                   MERN stack web developer.
