@@ -88,37 +88,37 @@ const Sidebar = () => {
         <div className="nav__menu">
           <ul className="nav__list">
             <li className={`nav__item ${isActive("/")}`}>
-              <Link to="/" className="nav__link" id="home_id">
-                <i className="icon-home"></i>
+              <Link to="/" className="nav__link" id="home_id" >
+                <i className="icon-home" title="Home" ></i>
               </Link>
             </li>
             <li className={`nav__item ${isActive("/about")}`}>
               <Link to="/about" className="nav__link" id="about_id">
-                <i className="icon-user-following"></i>
+                <i className="icon-user-following" title="About me"></i>
               </Link>
             </li>
             <li className={`nav__item ${isActive("/education")}`}>
               <Link to="/education" className="nav__link" id="education_id">
-                <i className="icon-graduation"></i>
+                <i className="icon-graduation" title="Education"></i>
               </Link>
             </li>
             <li className={`nav__item ${isActive("/projects")}`}>
               <Link to="/projects" className="nav__link" id="projects_id">
-                <i className="icon-layers"></i>
+                <i className="icon-layers" title="Projects"></i>
               </Link>
             </li>
             <li className={`nav__item ${isActive("/resume")}`}>
               <Link to="/resume" className="nav__link" id="resume_id">
-                <i className="icon-briefcase"></i>
+                <i className="icon-briefcase" title="Resume"></i>
               </Link>
             </li>
             <li className={`nav__item ${isActive("/contact")}`}>
               <Link to="/contact" className="nav__link" id="contact_id">
-                <i className="icon-bubble"></i>
+                <i className="icon-bubble" title="Contact me"></i>
               </Link>
             </li>
             <li className={`nav__item ${isActive("/play")} play__component`}>
-              <Link to="/play" className="nav__link " id="play_id">
+              <Link to="/play" className="nav__link " id="play_id" title="Play area">
                 <div className="three-body">
                   <div className="three-body__dot"></div>
                   <div className="three-body__dot"></div>
