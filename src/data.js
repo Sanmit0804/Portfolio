@@ -129,7 +129,7 @@ export const projects = [
   {
     title: "Foodie",
     description: `A full-featured food delivery application offering user registration, authentication, and seamless order management.`,
-    image: "/projects/Foodie.jpg",
+    image: "/projects/Foodie.png",
     tags: ["React.js", "Express.js", "Node.js", "MongoDB"],
     demo: "https://foodie-frontend-fc54.onrender.com/",
     code: "https://github.com/Sanmit0804/Foodie",
