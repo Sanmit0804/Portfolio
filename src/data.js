@@ -127,6 +127,14 @@ export const education = [
 
 export const projects = [
   {
+    title: "Foodie",
+    description: `A full-featured food delivery application offering user registration, authentication, and seamless order management.`,
+    image: "/projects/Foodie.jpg",
+    tags: ["React.js", "Express.js", "Node.js", "MongoDB"],
+    demo: "https://foodie-frontend-fc54.onrender.com/",
+    code: "https://github.com/Sanmit0804/Foodie",
+  },
+  {
     title: "FastFingers",
     description: `A dynamic typing test application that improves typing speed and accuracy. Built with JavaScript, "FastFinger" provides random text challenges and measures WPM and accuracy.`,
     image: "/projects/FastFingers.jpg",
