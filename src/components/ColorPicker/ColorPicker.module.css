@@ -1,3 +1,49 @@
+/* From Uiverse.io by JaydipPrajapati1910 */ 
+.radioInput {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.radioInput input {
+  appearance: none;
+  width: 1.5em;
+  height: 1.5em;
+  background-color: var(--body-color);
+  box-shadow: inset 2px 5px 10px rgb(5, 5, 5);
+  /* border: 1px solid var(--title-color); */
+  border-radius: 50%;
+  transition: .4s ease-in-out;
+}
+
+.radioInput input:hover {
+  scale: 1.2;
+  cursor: pointer;
+  box-shadow: none;
+}
+
+.radioInput .circle {
+  position: relative;
+  top: 0.01em;
+  left: -0.8em;
+  width: 0.5em;
+  height: 0.5em;
+  background-color: var(--first-color);
+  scale: 0;
+  border-radius: 10px;
+  transition: .4s ease-in-out;
+}
+
+.radioInput input:checked {
+  box-shadow: none;
+  border: 1px solid var(--first-color);
+}
+
+.radioInput input:checked + .circle {
+  transform: rotate(360deg);
+  scale: 1;
+}
+
 .select {
   position: fixed;
   top: 10px; /* Adjust the value as needed */
@@ -6,97 +52,6 @@
   cursor: pointer;
   transition: 300ms;
   color: white;
-  overflow: hidden;
+  /* overflow: hidden; */
   z-index: 1000; /* Ensure it's on top of other elements */
-}
-
-.selected {
-  background-color: #2a2f3b;
-  padding: 5px;
-  margin-bottom: 3px;
-  border-radius: 5px;
-  position: relative;
-  z-index: 100000;
-  font-size: 15px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.arrow {
-  position: relative;
-  right: 0px;
-  height: 10px;
-  transform: rotate(-90deg);
-  width: 25px;
-  fill: white;
-  z-index: 100000;
-  transition: 300ms;
-}
-
-.options {
-  display: flex;
-  flex-direction: column;
-  border-radius: 5px;
-  padding: 5px;
-  background-color: #2a2f3b;
-  position: relative;
-  top: -100px;
-  opacity: 0;
-  transition: 300ms;
-}
-
-.select:hover > .options {
-  opacity: 1;
-  top: 0;
-}
-
-.select:hover > .selected .arrow {
-  transform: rotate(0deg);
-}
-
-.option {
-  border-radius: 5px;
-  padding: 5px;
-  transition: 300ms;
-  background-color: #2a2f3b;
-  width: 150px;
-  font-size: 15px;
-  cursor: pointer;
-}
-
-.option:hover {
-  background-color: #323741;
-}
-
-.options input[type="radio"] {
-  display: none;
-}
-
-.options label {
-  display: inline-block;
-}
-.options label::before {
-  content: attr(data-txt);
-}
-
-.options input[type="radio"]:checked + label {
-  display: none;
-}
-
-.options input[type="radio"]#all:checked + label {
-  display: none;
-}
-
-.select:has(.options input[type="radio"]#all:checked) .selected::before {
-  content: attr(data-default);
-}
-.select:has(.options input[type="radio"]#option-1:checked) .selected::before {
-  content: attr(data-one);
-}
-.select:has(.options input[type="radio"]#option-2:checked) .selected::before {
-  content: attr(data-two);
-}
-.select:has(.options input[type="radio"]#option-3:checked) .selected::before {
-  content: attr(data-three);
 }
