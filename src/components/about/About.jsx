@@ -20,50 +20,6 @@ import { FaGithub } from "react-icons/fa";
 import { SiLeetcode } from "react-icons/si";
 import { FaLinkedin } from "react-icons/fa";
 
-// Here I am gonna use ScrollReveal js library
-// https://scrollrevealjs.org/
-
-// const AppContainer = styled.div`
-//   width: 100vw;
-//   height: 100vh;
-//   color: #0000;
-//   background-color: var(--body-color);
-//   position: relative;
-//   display: flex;
-//   align-items: center;
-//   justify-content: center;
-//   /* padding-right: 3rem; */
-// `;
-
-// const Wrapper = styled.div`
-//   width: 100vw;
-//   height: 100vh;
-//   display: flex;
-//   align-items: center;
-//   justify-content: center;
-//   flex-direction: column;
-// `;
-
-// const Line = styled.div`
-//   width: 100%;
-//   height: 11vw;
-//   position: relative;
-//   border: 1px solid white;
-//   /* overflow: hidden; */
-// `;
-
-// const Text = styled.div`
-//   position: absolute;
-//   font-size: 5vw;
-//   color: var(--first-color);
-//   line-height: 5vw;
-
-//   span {
-//     font-family: "Major Mono Display", monospace;
-//     font-size: 8vw;
-//   }
-// `;
-
 const About = () => {
   useEffect(() => {
     const scrollReveal = ScrollReveal({
@@ -74,22 +30,7 @@ const About = () => {
     });
 
     scrollReveal.reveal(".about__data", { delay: 150, origin: "bottom" });
-    // scrollReveal.reveal(".section__title", { delay: 150, origin: "left" });
-    // scrollReveal.reveal(".about__img", { delay: 150, origin: "left" });
   }, []);
-
-  // useEffect(() => {
-  //   const t1 = gsap.timeline();
-  //   t1.from(".singleLine div", {
-  //     y: 200,
-  //     ease: "power4.out",
-  //     delay: 1,
-  //     duration: 1.8,
-  //     stagger: {
-  //       amount: 0.4,
-  //     },
-  //   });
-  // });
 
   return (
     <>
