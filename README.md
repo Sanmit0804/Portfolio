@@ -9,5 +9,5 @@ You can view the live version of my portfolio at: [Sanmit's portfolio](https://s
 ## 📧 Contact
 
 Feel free to reach out if you have any questions or opportunities!  
-**Email**:   sanmitsuthar3@gmail.com
+**Email**:   sanmitsuthar3@gmail.com  <br/>
 **LinkedIn**:   https://www.linkedin.com/in/sanmitsuthar/
