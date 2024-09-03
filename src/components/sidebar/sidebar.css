@@ -12,7 +12,8 @@
   justify-content: space-between;
   z-index: 10;
   
-  box-shadow: 0 0 15px 5px rgba(255, 77, 97, 0.2);
+  box-shadow: 0px 0px 10px 5px var(--first-color-rgb); /* Adjust the alpha value */
+  
   backdrop-filter: blur(10px);
 }
 
@@ -50,15 +51,15 @@
 /* Responsive styles for mobile devices */
 @media (max-width: 768px) {
   .aside {
-    margin-left: 1.3rem;
     position: fixed;
-    left: 0;
+    left: 0px;
     bottom: 0;
     top: auto;
     width: 100%;
     min-height: 50px;
     flex-direction: row;
     padding: 1rem;
+    padding-right: 0px;
     border-top: 1px solid rgba(0, 0, 0, 0.05);
     border-right: none;
     justify-content: center; /* Center the navigation links */
@@ -66,7 +67,7 @@
 
   .nav__list {
     flex-direction: row;
-    column-gap: 3rem;
+    column-gap: 2.5rem;
     row-gap: 0;
   }
 

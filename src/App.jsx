@@ -17,6 +17,7 @@ import Contact from "./components/contact/Contact";
 import Play from "./components/play/Play"; // Play now handles its own loading
 import LoadingBar from "react-top-loading-bar";
 import PreLoader from "./components/preLoader/PreLoader";
+import ColorPicker from "./components/ColorPicker/ColorPicker";
 
 const pageVariants = {
   initial: {
@@ -168,21 +169,22 @@ function App() {
 
   return (
     <>
-      {preloader ? (
-        <PreLoader />
-      ) : (
-        <Router>
+    {preloader ? (
+      <PreLoader />
+    ) : (
+      <Router>
+      <ColorPicker/>
           <LoadingBar
-            color="var(--first-color)"
-            progress={progress}
-            onLoaderFinished={() => setProgress(0)}
+          color="var(--first-color)"
+          progress={progress}
+          onLoaderFinished={() => setProgress(0)}
           />
           <Sidebar />
           <main className="main">
-            <AnimatedRoutes setProgress={setProgress} />
+          <AnimatedRoutes setProgress={setProgress} />
           </main>
-        </Router>
-      )}
+          </Router>
+        )}
     </>
   );
 }
