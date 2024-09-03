@@ -25,6 +25,7 @@
 :root {
   /* ------- Colors (Light Mode) --------------*/
   --first-color: rgb(255, 77, 97);
+  --first-color-rgb: rgba(255,77,97,0.5);
   /* --first-color: hsl(232, 100%, 50%)  !important; */
   --title-color: hsl(244, 24%, 26%);
   --text-color: hsl(244, 16%, 43%);

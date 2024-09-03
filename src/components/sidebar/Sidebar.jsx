@@ -4,6 +4,7 @@ import "./sidebar.css";
 import { driver } from "driver.js";
 import "driver.js/dist/driver.css";
 import ThemeToggle from "../themeToggle/ThemeToggle";
+import ColorPicker from "../ColorPicker/ColorPicker";
 
 const Sidebar = () => {
   const location = useLocation(); // Get the current location
