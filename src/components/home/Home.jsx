@@ -31,7 +31,7 @@ const Home = () => {
             <span>{Bio.name.charAt(10)}</span>
             <span>{Bio.name.charAt(11)}</span>
             <span>{Bio.name.charAt(12)}</span>  <span>&nbsp;</span>
-            <span>👋🏻</span>
+            <span className="wave">👋🏻</span>
           </h1>
           <h3 className="highlight__text">- Full Stack Developer -</h3>
           <HeaderSocials></HeaderSocials>

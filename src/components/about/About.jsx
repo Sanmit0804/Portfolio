@@ -110,7 +110,7 @@ const About = () => {
           <div className="about__data grid">
             <div className="about__info">
               <p className="about__about">
-                Hii..!! 👋🏻 <span className="highlight__text">Sanmit</span> here,
+                Hii..!! <span className="wave">👋🏻</span> <span className="highlight__text">Sanmit</span> here,
                 Computer Engineering student with a passion for coding and
                 problem-solving, from{" "}
                 <span className="highlight__text">India.</span>
