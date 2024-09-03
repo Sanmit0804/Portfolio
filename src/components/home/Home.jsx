@@ -1,10 +1,8 @@
 // Home.js
 import React from "react";
 import "./home.css";
-import pdf from "/Sanmit_Resume.pdf";
 import { Bio } from "../../data";
 import HeaderSocials from "./HeaderSocials";
-import Shapes from "./Shapes";
 import { Link } from "react-router-dom";
 import Tilt from "../tilt/Tilt";
 
@@ -19,24 +17,23 @@ const Home = () => {
     <>
       <section className="home container" id="home">
         <div className="intro">
-          <Tilt options={tiltOptions} className="tilt">
-            <img src={Bio.img} alt="" className="home__img" />
-          </Tilt>
           <h1 className="home__name bounce-text">
-          <span>{Bio.name.charAt(0)}</span>
-          <span>{Bio.name.charAt(1)}</span>
-          <span>{Bio.name.charAt(2)}</span>
-          <span>{Bio.name.charAt(3)}</span>
-          <span>{Bio.name.charAt(4)}</span>
-          <span>{Bio.name.charAt(5)}</span> <span>&nbsp;</span>
-          <span>{Bio.name.charAt(6)}</span>
-          <span>{Bio.name.charAt(7)}</span>
-          <span>{Bio.name.charAt(8)}</span>
-          <span>{Bio.name.charAt(9)}</span>
-          <span>{Bio.name.charAt(10)}</span>
-          <span>{Bio.name.charAt(11)}</span>
-          <span>{Bio.name.charAt(12)}</span>
+            <span>{Bio.name.charAt(0)}</span>
+            <span>{Bio.name.charAt(1)}</span>
+            <span>{Bio.name.charAt(2)}</span>
+            <span>{Bio.name.charAt(3)}</span>
+            <span>{Bio.name.charAt(4)}</span>
+            <span>{Bio.name.charAt(5)}</span> <span>&nbsp;</span>
+            <span>{Bio.name.charAt(6)}</span>
+            <span>{Bio.name.charAt(7)}</span>
+            <span>{Bio.name.charAt(8)}</span>
+            <span>{Bio.name.charAt(9)}</span>
+            <span>{Bio.name.charAt(10)}</span>
+            <span>{Bio.name.charAt(11)}</span>
+            <span>{Bio.name.charAt(12)}</span>  <span>&nbsp;</span>
+            <span>👋🏻</span>
           </h1>
+          <h3 className="highlight__text">- Full Stack Developer -</h3>
           <HeaderSocials></HeaderSocials>
 
           <div className="btn__project">
@@ -49,6 +46,11 @@ const Home = () => {
               About me
             </Link>
           </div>
+        </div>
+        <div className="home__img__container" >
+          <Tilt options={tiltOptions} className="tilt">
+            <img src={Bio.img} alt="" className="home__img" />
+          </Tilt>
         </div>
       </section>
     </>
