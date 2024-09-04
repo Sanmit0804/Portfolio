@@ -1,0 +1,104 @@
+.custom-button {
+    display: flex;
+    align-items: center;
+    font-size: 0.875rem;
+    font-weight: 500;
+    background-color: black;
+    color: white;
+    height: 2.25rem;
+    padding: 0.5rem 1rem;
+    max-width: 13rem;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    justify-content: center;
+    gap: 0.5rem;
+    border-radius: 0.375rem;
+    transition: all 0.3s ease-out;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+
+    position: fixed;
+    top: 50px; /* Adjust the value as needed */
+    right: 10px; /* Adjust the value as needed */
+    width: fit-content;
+    cursor: pointer;
+    transition: 300ms;
+    color: white;
+    /* overflow: hidden; */
+    z-index: 1000; /* Ensure it's on top of other elements */
+  }
+
+  @media (max-width: 800px) {
+    .custom-button{
+        display: none;
+    }
+    
+  }
+  
+  .custom-button:focus-visible {
+    outline: none;
+  }
+  
+  .custom-button:hover {
+    background-color: rgba(0, 0, 0, 0.9);
+    outline: 2px solid #ffffff;
+  }
+
+  .custom-button:hover .icon{
+    color: gold;
+  }
+  
+  .custom-button-glow {
+    position: absolute;
+    right: 0;
+    top: -3rem;
+    height: 8rem;
+    width: 2rem;
+    transform: translateX(3rem) rotate(12deg);
+    background-color: rgb(255, 255, 255);
+    opacity: 0.1;
+    transition: all 1s ease-out;
+  }
+  
+  .custom-button:hover .custom-button-glow {
+    transform: translateX(-10rem) rotate(12deg);
+  }
+  
+  .custom-button-content {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    overflow: hidden;
+  }
+  
+  .icon {
+    height: 1.25rem;
+    width: 1.25rem;
+  }
+  
+  .text {
+    white-space: nowrap;
+    color: rgb(255, 255, 255);
+  }
+  
+  .custom-button-icon {
+    display: inline-flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .count {
+    position: absolute;
+    bottom: -0.125rem;
+    right: -0.5rem;
+    color: white;
+    padding: 0.125rem 0.5rem;
+    border-radius: 9999px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    line-height: 1rem;
+    background-color: rgba(255, 69, 58, 1);
+  }
+  

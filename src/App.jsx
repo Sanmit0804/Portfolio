@@ -18,6 +18,7 @@ import Play from "./components/play/Play"; // Play now handles its own loading
 import LoadingBar from "react-top-loading-bar";
 import PreLoader from "./components/preLoader/PreLoader";
 import ColorPicker from "./components/ColorPicker/ColorPicker";
+import GitHubStar from "./components/GitHubStar/GitHubStar";
 
 const pageVariants = {
   initial: {
@@ -174,6 +175,7 @@ function App() {
     ) : (
       <Router>
       <ColorPicker/>
+      <GitHubStar/>
           <LoadingBar
           color="var(--first-color)"
           progress={progress}
