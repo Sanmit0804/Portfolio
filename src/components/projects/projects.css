@@ -106,16 +106,6 @@ body {
   margin-bottom: 0.5rem;
 }
 
-.project__meta {
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 3; /* Number of lines to show */
-  overflow: hidden;
-  text-overflow: ellipsis;
-  font-size: 0.875rem;
-  color: #8b88b1;
-}
-
 .project__dot {
   font-size: 14px;
   color: rgb(110, 110, 253);
