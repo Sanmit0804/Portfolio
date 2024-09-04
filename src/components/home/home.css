@@ -106,4 +106,8 @@
   .intro h1 {
     font-size: 2rem;
   }
+
+  .home__img{
+  box-shadow: rgba(255, 255, 0, 0.56) 0px 22px 70px 4px;
+  }
 }
