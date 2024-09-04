@@ -85,59 +85,25 @@ const About = () => {
             </div>
           ))}
         </div>  */}
+       
 
-        <div className="about__skills grid">
-          <h1>Technologies</h1>
-          <div className="icons__container">
-            <div className="icons__skills" style={{ color: "#E34F26" }}>
-              <FaHtml5 />
-            </div>
-            <div className="icons__skills" style={{ color: "#1572B6" }}>
-              <FaCss3Alt />
-            </div>
-            <div className="icons__skills" style={{ color: "#F7DF1E" }}>
-              <IoLogoJavascript />
-            </div>
-            {/*         <div className="icons__skills" style={{ color: "#38B2AC" }}>
-              <RiTailwindCssFill />
-            </div>   */}
-            <div className="icons__skills" style={{ color: "#61DAFB" }}>
-              <RiReactjsLine />
-            </div>
-            <div className="icons__skills" style={{ color: "#339933" }}>
-              <FaNodeJs />
-            </div>
-            <div className="icons__skills" style={{ color: "white" }}>
-              <SiExpress />
-            </div>
-            <div className="icons__skills" style={{ color: "#47A248" }}>
-              <SiMongodb />
-            </div>
-            <div className="icons__skills" style={{ color: "#00758F" }}>
-              <TbBrandMysql />
-            </div>
-            <div className="icons__skills" style={{ color: "orange" }}>
-              <FaJava />
-            </div>
-          </div>
-        </div>
 
         <div className="about__skills grid">
           <h1>Find me here</h1>
           <div className="icons__container">
-            <a href={Bio.github} target="_blank">
-              <div className="icons__skills" style={{ color: "white" }}>
+            <a href={Bio.github} target="_blank" title="GitHub">
+              <div className="icons__skills" style={{ color: "grey" }}>
                 <FaGithub />
                 <p>&nbsp; GitHub</p>
               </div>
             </a>
-            <a href={Bio.leetcode} target="_blank">
+            <a href={Bio.leetcode} target="_blank" title="LeetCode">
               <div className="icons__skills" style={{ color: "orange" }}>
                 <SiLeetcode />
                 <p>&nbsp; LeetCode</p>
               </div>
             </a>
-            <a href={Bio.linkedIn} target="_blank">
+            <a href={Bio.linkedIn} target="_blank" title="LinkedIn">
               <div className="icons__skills" style={{ color: "blue" }}>
                 <FaLinkedin />
                 <p>&nbsp; LinkedIn</p>
@@ -145,6 +111,43 @@ const About = () => {
             </a>
           </div>
         </div>
+
+
+        <div className="about__skills grid">
+        <h1>Technologies</h1>
+        <div className="icons__container">
+          <div className="icons__skills" title="HTML" style={{ color: "#E34F26" }}>
+            <FaHtml5 />
+          </div>
+          <div className="icons__skills" title="CSS" style={{ color: "#1572B6" }}>
+            <FaCss3Alt />
+          </div>
+          <div className="icons__skills" title="JavaScript" style={{ color: "#F7DF1E" }}>
+            <IoLogoJavascript />
+          </div>
+          {/*         <div className="icons__skills" style={{ color: "#38B2AC" }}>
+            <RiTailwindCssFill />
+          </div>   */}
+          <div className="icons__skills" title="React.js" style={{ color: "#61DAFB" }}>
+            <RiReactjsLine />
+          </div>
+          <div className="icons__skills" title="Node.js" style={{ color: "#339933" }}>
+            <FaNodeJs />
+          </div>
+          <div className="icons__skills" title="Express.js" style={{ color: "grey" }}>
+            <SiExpress />
+          </div>
+          <div className="icons__skills" title="MongoDB" style={{ color: "#47A248" }}>
+            <SiMongodb />
+          </div>
+          <div className="icons__skills" title="SQL" style={{ color: "#00758F" }}>
+            <TbBrandMysql />
+          </div>
+          <div className="icons__skills" title="Java" style={{ color: "orange" }}>
+            <FaJava />
+          </div>
+        </div>
+      </div>
       </section>
     </>
   );

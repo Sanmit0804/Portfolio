@@ -22,7 +22,7 @@
   border-radius: 5%;
   margin-bottom: 2rem;
   transition: box-shadow 0.3s ease;
-  box-shadow: 0 0 0 9px rgb(255 255 255 / 30%);
+  box-shadow: 0 0 0 9px var(--container-color);
   animation: profile__animate 8s ease-in-out infinite 1s;
 }
 

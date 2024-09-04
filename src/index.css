@@ -33,7 +33,7 @@
   --title-color: hsl(244, 24%, 26%);
   --text-color: hsl(244, 16%, 43%);
   --body-color: hsl(258, 60%, 98%);
-  --container-color: #fff;
+  --container-color: hsl(0, 0%, 64%);
 
   /* Dark Mode Colors */
   --first-color-dark:rgb(255, 77, 97);
