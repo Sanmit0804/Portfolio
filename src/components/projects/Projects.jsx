@@ -1,11 +1,24 @@
-import React from "react";
+import React, { useState } from "react";
 import "./projects.css";
 import { projects } from "../../data";
+import Card from "./Card";
 
 const Projects = () => {
+  const [filter, setFilter] = useState("all"); // Default to show all projects
+
+  // Function to handle filtering
+  const filteredProjects = () => {
+    if (filter === "major") {
+      return projects.filter((project) => project.major === true);
+    } else if (filter === "minor") {
+      return projects.filter((project) => project.major === false);
+    }
+    return projects; // Show all projects by default
+  };
+
   return (
     <section className="project container section" id="projects">
-      <div >
+      <div>
         <h3 className="section__title">
           My Recent{" "}
           <span className="highlight__text bounce-text">
@@ -20,43 +33,14 @@ const Projects = () => {
           Here are a few projects I've worked on recently
         </h4>
       </div>
+      <div className="radio project_types">
+        <input defaultChecked defaultValue="other"  name="type" id="all" type="radio" label="All" onClick={() => setFilter("all")} />
+        <input  defaultValue="male" name="type" id="major" type="radio" label="Major Projects" onClick={() => setFilter("major")} />
+        <input defaultValue="female" name="type" id="minor" type="radio" label="Minor Projects"  onClick={() => setFilter("minor")}/>
+      </div>
       <div className="project__container grid">
-        {projects.map((project, index) => (
-          <div key={index} className="project__card">
-            <div className="project__thumb">
-              <a href={project.demo} target="_blank" rel="noopener noreferrer">
-                <span className="project__category">{project.title}</span>
-              </a>
-              <a href={project.demo} target="_blank" rel="noopener noreferrer">
-                <img
-                  src={project.image}
-                  alt={project.title}
-                  className="project__img"
-                />
-              </a>
-            </div>
-            <div className="project__details">
-              <h3 className="project__title">{project.title}</h3>
-              <div className="project__meta">
-                <span>{project.description}</span>
-              </div>
-              <div className="project__dot">
-                {project.tags.map((tag, i) => (
-                  <span key={i} className="project__tag">
-                    {tag}&nbsp;&nbsp;&nbsp;
-                  </span>
-                ))}
-              </div>
-              <div className="btn__project">
-                <a href={project.demo} target="_blank" className="btn">
-                  Demo
-                </a>
-                <a href={project.code} target="_blank" className="btn">
-                  GitHub
-                </a>
-              </div>
-            </div>
-          </div>
+        {filteredProjects().map((project, index) => (
+          <Card project={project} key={index} />
         ))}
       </div>
     </section>
