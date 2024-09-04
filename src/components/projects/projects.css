@@ -125,8 +125,6 @@ body {
 
 /* Options for Project types */
 
-/* From Uiverse.io by Shoh2008 */ 
-
 .project_types{
   margin: 50px auto;
 }
@@ -173,4 +171,13 @@ body {
   display: inline-block;
   text-align: center;
   width: 100%;
+}
+
+
+/* Read more button */
+
+.read-more-btn
+{
+  background-color: transparent;
+  color: grey;
 }

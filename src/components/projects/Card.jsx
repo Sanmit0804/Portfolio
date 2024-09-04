@@ -1,6 +1,13 @@
-import React from "react";
+import React, { useState } from "react";
 
 const Card = ({project, index}) => {
+
+  const [isExpanded, setIsExpanded] = useState(false);
+
+  const handleToggle = () =>{
+    setIsExpanded(!isExpanded);
+  }
+
   return (
     <div key={index} className="project__card">
       <div className="project__thumb">
@@ -18,7 +25,10 @@ const Card = ({project, index}) => {
       <div className="project__details">
         <h3 className="project__title">{project.title}</h3>
         <div className="project__meta">
-          <span>{project.description}</span>
+          <span>
+            {isExpanded ? `${project.description}     `  : `${project.description.substring(0, 55)}...`}
+            <button onClick={handleToggle} className="read-more-btn">{isExpanded ? " show less" : " read more"}</button>
+          </span>
         </div>
         <div className="project__dot">
           {project.tags.map((tag, i) => (
