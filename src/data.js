@@ -133,6 +133,7 @@ export const projects = [
     tags: ["React.js", "Express.js", "Node.js", "MongoDB"],
     demo: "https://foodie-frontend-fc54.onrender.com/",
     code: "https://github.com/Sanmit0804/Foodie",
+    major: true,
   },
   {
     title: "FastFingers",
@@ -141,6 +142,7 @@ export const projects = [
     tags: ["HTML5", "CSS3", "JavaScript"],
     demo: "https://sanmit0804.github.io/FastFingers/FastFingers/",
     code: "https://github.com/Sanmit0804/FastFingers",
+    major: false,
   },
   {
     title: "Thoughts - Your SocialApp",
@@ -149,6 +151,7 @@ export const projects = [
     tags: ["Node.js", "Express", "MongoDB", "EJS", "bcrypt", "JWT", "Multer"],
     demo: "https://thoughts-your-social-app.vercel.app/",
     code: "https://github.com/Sanmit0804/Thoughts-YourSocialApp",
+    major: true,
   },
   {
     title: "Discord - Bot",
@@ -157,6 +160,7 @@ export const projects = [
     tags: ["Node.js", "Discord.js"],
     demo: "https://github.com/Sanmit0804/Discord-Bot",
     code: "https://github.com/Sanmit0804/Discord-Bot",
+    major: true,
   },
   {
     title: "URL - Shortener",
@@ -165,6 +169,7 @@ export const projects = [
     tags: ["Node.js", "Express.js", "MongoDB"],
     demo: "https://github.com/Sanmit0804/URL-Shortener",
     code: "https://github.com/Sanmit0804/URL-Shortener",
+    major: false,
   },
   {
     title: "Weather App with Dynamic Background",
@@ -173,6 +178,7 @@ export const projects = [
     tags: ["HTML5", "CSS3", "JavaScript"],
     demo: "https://sanmit0804.github.io/Weather-Application-with-Dynamic-Background/",
     code: "https://github.com/Sanmit0804/Weather-Application-with-Dynamic-Background",
+    major: false,
   },
   {
     title: "Quiz Game",
@@ -181,6 +187,7 @@ export const projects = [
     tags: ["HTML5", "CSS3", "JavaScript"],
     demo: "https://sanmit0804.github.io/Quiz-Application/",
     code: "https://github.com/Sanmit0804/Quiz-Application",
+    major: false,
   },
   {
     title: "Todo List",
@@ -189,5 +196,6 @@ export const projects = [
     tags: ["HTML5", "CSS3", "JavaScript"],
     demo: "https://sanmit0804.github.io/Todo-List/",
     code: "https://github.com/Sanmit0804/Todo-List",
+    major: false,
   },
 ];
