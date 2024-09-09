@@ -20,7 +20,7 @@ function Play() {
       setSceneUrl(url);
     };
 
-    // loadScene();
+    loadScene();
   }, []);
 
   const handleLoad = () => {
