@@ -92,7 +92,12 @@ function Play() {
         Please wait....
       </div>
     )}
-      
+    {sceneUrl && (
+      <Spline
+        scene={sceneUrl}
+        onLoad={handleLoad} // Triggered when the Spline scene is fully loaded
+      />
+    )}
     </section>
   );
 }
