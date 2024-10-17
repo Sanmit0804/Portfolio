@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./resume.css";
+import "./Resume.css";
 import pdf from "/Sanmit_Resume.pdf";
 import { Document, Page } from "react-pdf";
 

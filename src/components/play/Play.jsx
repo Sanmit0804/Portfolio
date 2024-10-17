@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Spline from "@splinetool/react-spline";
-import "./play.css";
+import "./Play.css";
 
 // Preloader function to fetch or prepare data before rendering the Play component
 export const playPreLoader = async () => {

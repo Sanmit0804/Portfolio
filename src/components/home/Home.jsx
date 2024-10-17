@@ -1,10 +1,10 @@
 // Home.js
 import React from "react";
-import "./home.css";
+import "./Home.css";
 import { Bio } from "../../data";
 import HeaderSocials from "./HeaderSocials";
 import { Link } from "react-router-dom";
-import Tilt from "../tilt/Tilt";
+import Tilt from "../Tilt/Tilt";
 
 const Home = () => {
   const tiltOptions = {

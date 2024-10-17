@@ -1,9 +1,8 @@
 import React, { useEffect } from "react";
-import "./about.scss";
+import "./About.scss";
 import Image from "/programmer.jpg";
 import { Bio, skills } from "../../data";
-// import gsap from "gsap";
-// import styled from "styled-components";
+
 // Skills
 import { RiReactjsLine } from "react-icons/ri";
 import { SiMongodb } from "react-icons/si";
@@ -19,6 +18,7 @@ import { SiExpress } from "react-icons/si";
 import { FaGithub } from "react-icons/fa";
 import { SiLeetcode } from "react-icons/si";
 import { FaLinkedin } from "react-icons/fa";
+import Experience from "../Experience/Experience";
 
 const About = () => {
   useEffect(() => {
@@ -148,6 +148,8 @@ const About = () => {
           </div>
         </div>
       </div>
+
+      <Experience/>
       </section>
     </>
   );

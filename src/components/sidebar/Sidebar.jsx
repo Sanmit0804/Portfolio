@@ -1,9 +1,9 @@
 import React, { useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
-import "./sidebar.css";
+import "./Sidebar.css";
 import { driver } from "driver.js";
 import "driver.js/dist/driver.css";
-import ThemeToggle from "../themeToggle/ThemeToggle";
+import ThemeToggle from "../ThemeToggle/ThemeToggle";
 
 const Sidebar = () => {
   const location = useLocation(); // Get the current location

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./projects.css";
+import "./Projects.css";
 import { projects } from "../../data";
 import Card from "./Card";
 

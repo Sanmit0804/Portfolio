@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import "./themeToggle.css";
+import "./ThemeToggle.css";
 
 const ThemeToggle = () => {
   // Default to dark mode

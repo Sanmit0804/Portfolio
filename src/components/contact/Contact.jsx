@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react";
-import "./contact.css";
-import "./copyButton.css";
+import "./Contact.css";
+import "./CopyButton.css";
 import { Bio } from "../../data";
 import { FaCopy } from "react-icons/fa";
-import HeaderSocials from "../home/HeaderSocials";
+import HeaderSocials from "../Home/HeaderSocials";
 
 const copyToClipboard = (text, setCopyStatus) => {
   navigator.clipboard.writeText(text).then(

@@ -7,16 +7,16 @@ import {
 } from "react-router-dom";
 import { AnimatePresence, motion } from "framer-motion";
 import "./app.css";
-import Sidebar from "./components/sidebar/Sidebar";
-import Home from "./components/home/Home";
-import About from "./components/about/About";
-import Resume from "./components/resume/Resume";
-import Education from "./components/education/Education";
-import Projects from "./components/projects/Projects";
-import Contact from "./components/contact/Contact";
-import Play from "./components/play/Play"; // Play now handles its own loading
+import Sidebar from "./components/Sidebar/Sidebar";
+import Home from "./components/Home/Home";
+import About from "./components/About/About";
+import Resume from "./components/Resume/Resume";
+import Education from "./components/Education/Education";
+import Projects from "./components/Projects/Projects";
+import Contact from "./components/Contact/Contact";
+import Play from "./components/Play/Play"; // Play now handles its own loading
 import LoadingBar from "react-top-loading-bar";
-import PreLoader from "./components/preLoader/PreLoader";
+import PreLoader from "./components/PreLoader/PreLoader";
 import ColorPicker from "./components/ColorPicker/ColorPicker";
 import GitHubStar from "./components/GitHubStar/GitHubStar";
 

@@ -1,5 +1,5 @@
 import React from "react";
-import "./education.css";
+import "./Education.css";
 import { education } from "../../data";
 
 // For future updates
