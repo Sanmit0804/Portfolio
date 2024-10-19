@@ -1,47 +1,22 @@
-import React, { useState } from "react";
-import "./Resume.css";
+import React from "react";
+import "./Resume.scss";
 import pdf from "/Sanmit_Resume.pdf";
-import { Document, Page } from "react-pdf";
+import { experiences } from "../../data";
 
 const Resume = () => {
-  const [numPages, setNumPages] = useState(null);
-  const [pageNumber, setPageNumber] = useState(1);
-
-  function onDocumentLoadSuccess({ numPages }) {
-    setNumPages(numPages);
-  }
-
-  const [wid, setwid] = useState(window.innerWidth);
-
-  const handleResize = () => {
-    setwid(window.innerWidth);
-  };
-
-  window.addEventListener("load", handleResize);
-  window.addEventListener("resize", handleResize);
   return (
-    <section className="pdf__viewer ResumePage" id="resume">
-      <div className="pdf-div">
-        <Document file={pdf} onLoadSuccess={onDocumentLoadSuccess}>
-          {Array.apply(null, Array(numPages))
-            .map((x, i) => i + 1)
-            .map((page) => {
-              return (
-                <Page
-                  key={page}
-                  pageNumber={pageNumber}
-                  renderTextLayer={false}
-                  renderAnnotationLayer={false}
-                  scale={wid < 700 ? (wid > 475 ? 0.7 : 0.5) : 1}
-                />
-              );
-            })}
-            <p>
-              Page {pageNumber} of {numPages}
-            </p>
-        </Document>
+    <div className="resume">
+      <div className="resume__experience">
+        {experiences.map((e, index) => (
+          <div className="resume__item">
+            <div className="resume__title">{e.company}</div>
+            <div className="resume__subtitle">{e.role}</div>
+            <div className="resume__subtitle">{e.date}</div>
+          </div>
+        ))}
       </div>
-      <div className="btn-container">
+
+      <div className="resume__buttons">
         <a href={pdf} download="Sanmit_Resume.pdf" className="btn">
           Download Resume
         </a>
@@ -49,7 +24,7 @@ const Resume = () => {
           View Resume
         </a>
       </div>
-    </section>
+    </div>
   );
 };
 

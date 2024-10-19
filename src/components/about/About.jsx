@@ -18,7 +18,6 @@ import { SiExpress } from "react-icons/si";
 import { FaGithub } from "react-icons/fa";
 import { SiLeetcode } from "react-icons/si";
 import { FaLinkedin } from "react-icons/fa";
-import Experience from "../Experience/Experience";
 
 const About = () => {
   useEffect(() => {
@@ -149,7 +148,7 @@ const About = () => {
         </div>
       </div>
 
-      <Experience/>
+
       </section>
     </>
   );
