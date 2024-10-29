@@ -8,7 +8,7 @@ const Resume = () => {
     <div className="resume">
       <div className="resume__experience">
         {experiences.map((e, index) => (
-          <div className="resume__item">
+          <div className="resume__item" key={index}>
             <div className="resume__title">{e.company}</div>
             <div className="resume__subtitle">{e.role}</div>
             <div className="resume__subtitle">{e.date}</div>
