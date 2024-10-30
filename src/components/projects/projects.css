@@ -80,7 +80,7 @@ body {
 
 .project__category {
   color: #fff;
-  background-color: #007bff;
+  background-color: var(--first-color);
   border-bottom-left-radius: 0.9375rem;
   border-bottom-right-radius: 0.9375rem;
   position: absolute;
