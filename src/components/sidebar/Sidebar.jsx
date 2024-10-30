@@ -6,7 +6,8 @@ import "driver.js/dist/driver.css";
 import ThemeToggle from "../ThemeToggle/ThemeToggle";
 
 const Sidebar = () => {
-  const location = useLocation(); // Get the current location
+  // get the current location
+  const location = useLocation();
 
   const isActive = (path) => (location.pathname === path ? "active" : "");
 
