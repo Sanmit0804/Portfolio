@@ -53,13 +53,13 @@ function Contact() {
         </header>
         <section className="mapbox" data-mapbox>
           <figure>
-           { /* <iframe
+            <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d117331.54939426926!2d72.5631460538414!3d23.220845994088105!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395c2b987c6d6809%3A0xf86f06a7873e0391!2sGandhinagar%2C%20Gujarat!5e0!3m2!1sen!2sin!4v1722445865236!5m2!1sen!2sin"
               width="400"
               height="300"
               loading="lazy"
-            ></iframe>  */}
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3777314.828820295!2d68.68500364011504!3d22.399498426760726!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3959051f5f0ef795%3A0x861bd887ed54522e!2sGujarat!5e0!3m2!1sen!2sin!4v1723476409445!5m2!1sen!2sin" width="600" height="450" loading="lazy" ></iframe>
+            ></iframe>  
+           {/*  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3777314.828820295!2d68.68500364011504!3d22.399498426760726!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3959051f5f0ef795%3A0x861bd887ed54522e!2sGujarat!5e0!3m2!1sen!2sin!4v1723476409445!5m2!1sen!2sin" width="600" height="450" loading="lazy" ></iframe>  */}
           </figure>
         </section>
         {
