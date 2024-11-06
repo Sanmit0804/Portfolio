@@ -20,6 +20,8 @@ import PreLoader from "./components/PreLoader/PreLoader";
 import ColorPicker from "./components/ColorPicker/ColorPicker";
 import GitHubStar from "./components/GitHubStar/GitHubStar";
 
+// test changes
+
 const pageVariants = {
   initial: {
     opacity: 0,
