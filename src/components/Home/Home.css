@@ -1,0 +1,113 @@
+.home {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  flex-direction: row; /* Default layout */
+}
+
+.intro {
+  max-width: 540px;
+  text-align: center;
+  margin-right: 100px;
+}
+
+.home__img {
+  display: block;
+  height: 250px;
+  width: 250px;
+  margin: 0 auto;
+  padding: 10px;
+  border-radius: 5%;
+  margin-bottom: 2rem;
+  transition: box-shadow 0.3s ease;
+  box-shadow: 0 0 0 9px var(--container-color);
+  animation: profile__animate 8s ease-in-out infinite 1s;
+}
+
+@keyframes profile__animate {
+  0% {
+    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+  }
+  50% {
+    border-radius: 30% 60% 70% 40%/50% 60% 30% 60%;
+  }
+  100% {
+    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+  }
+}
+
+.home__img:hover {
+  box-shadow: rgba(255, 255, 0, 0.56) 0px 22px 70px 4px;
+  cursor: pointer;
+}
+
+.home__name {
+  font-size: 50px;
+  margin-bottom: 0.5rem;
+}
+
+.home__socials {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 1.5rem 0;
+  font-size: x-large;
+}
+
+.home__social-link {
+  color: var(--title-color);
+  font-size: 1.3rem;
+  transition: 0.3s;
+  font-size: x-large;
+}
+
+.home__social-link:hover {
+  color: var(--first-color);
+}
+
+
+ /* Here i have used keyframes to wave the 👋🏻 emoji  */
+.wave {
+  animation-name: wave-animation;  /* Refers to the name of your @keyframes element below */
+  animation-duration: 2.5s;        /* Change to speed up or slow down */
+  animation-iteration-count: infinite;  /* Never stop waving :) */
+  transform-origin: 70% 70%;       /* Pivot around the bottom-left palm */
+  display: inline-block;
+}
+
+@keyframes wave-animation {
+    0% { transform: rotate( 0.0deg) }
+   10% { transform: rotate(14.0deg) }  /* The following five values can be played with to make the waving more or less extreme */
+   20% { transform: rotate(-8.0deg) }
+   30% { transform: rotate(14.0deg) }
+   40% { transform: rotate(-4.0deg) }
+   50% { transform: rotate(10.0deg) }
+   60% { transform: rotate( 0.0deg) }  /* Reset for the last half to pause */
+  100% { transform: rotate( 0.0deg) }
+}
+
+
+@media (max-width: 800px) {
+  .home {
+    display: flex;
+    flex-direction: column-reverse; /* Change to column layout */
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .intro {
+    margin-right: 0; /* Remove right margin */
+    margin-top: 1rem; /* Add top margin for spacing */
+  }
+
+  .intro h1 {
+    font-size: 2rem;
+  }
+
+  .home__img{
+  box-shadow: rgba(255, 255, 0, 0.56) 0px 22px 70px 4px;
+  }
+}

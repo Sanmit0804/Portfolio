@@ -1,0 +1,57 @@
+/* From Uiverse.io by JaydipPrajapati1910 */ 
+.radioInput {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.radioInput input {
+  appearance: none;
+  width: 1.5em;
+  height: 1.5em;
+  background-color: var(--body-color);
+  box-shadow: inset 2px 5px 10px rgb(5, 5, 5);
+  /* border: 1px solid var(--title-color); */
+  border-radius: 50%;
+  transition: .4s ease-in-out;
+}
+
+.radioInput input:hover {
+  scale: 1.2;
+  cursor: pointer;
+  box-shadow: none;
+}
+
+.radioInput .circle {
+  position: relative;
+  top: 0.01em;
+  left: -0.8em;
+  width: 0.5em;
+  height: 0.5em;
+  background-color: var(--first-color);
+  scale: 0;
+  border-radius: 10px;
+  transition: .4s ease-in-out;
+}
+
+.radioInput input:checked {
+  box-shadow: none;
+  border: 1px solid var(--first-color);
+}
+
+.radioInput input:checked + .circle {
+  transform: rotate(360deg);
+  scale: 1;
+}
+
+.select {
+  position: fixed;
+  top: 10px; /* Adjust the value as needed */
+  right: 10px; /* Adjust the value as needed */
+  width: fit-content;
+  cursor: pointer;
+  transition: 300ms;
+  color: white;
+  /* overflow: hidden; */
+  z-index: 1000; /* Ensure it's on top of other elements */
+}
