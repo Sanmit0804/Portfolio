@@ -19,6 +19,9 @@ import { FaGithub } from "react-icons/fa";
 import { SiLeetcode } from "react-icons/si";
 import { FaLinkedin } from "react-icons/fa";
 
+import { IconCloud } from "./IconCloud";
+
+
 const About = () => {
   useEffect(() => {
     const scrollReveal = ScrollReveal({
@@ -147,7 +150,9 @@ const About = () => {
           </div>
         </div>
       </div>
-
+      <div className="iconcloud">
+      <IconCloudDemo/>
+      </div>
 
       </section>
     </>
@@ -155,3 +160,31 @@ const About = () => {
 };
 
 export default About;
+
+
+const slugs = [
+  "typescript",
+  "javascript",
+  "java",
+  "react",
+  "html5",
+  "css3",
+  "nodedotjs",
+  "express",
+  "git",
+  "jira",
+  "github",
+  "visualstudiocode",
+  "androidstudio",
+  "figma",
+  "mongodb",
+  "mysql",
+];
+
+export function IconCloudDemo() {
+  return (
+    <div className="relative flex size-full max-w-lg items-center justify-center overflow-hidden rounded-lg border bg-background px-20 pb-20 pt-8 ">
+      <IconCloud iconSlugs={slugs} />
+    </div>
+  );
+}
