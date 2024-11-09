@@ -6,7 +6,6 @@ import "driver.js/dist/driver.css";
 import ThemeToggle from "../ThemeToggle/ThemeToggle";
 
 const Sidebar = () => {
-  // get the current location
   const location = useLocation();
 
   const isActive = (path) => (location.pathname === path ? "active" : "");
@@ -25,58 +24,7 @@ const Sidebar = () => {
             align: "start",
           },
         },
-        {
-          element: "#about_id",
-          popover: {
-            title: "About Me",
-            description: "Learn more about me on this page.",
-            side: "bottom",
-            align: "start",
-          },
-        },
-        {
-          element: "#education_id",
-          popover: {
-            title: "Education",
-            description: "View my educational background here.",
-            side: "bottom",
-            align: "start",
-          },
-        },
-        {
-          element: "#projects_id",
-          popover: {
-            title: "Projects",
-            description: "Explore the projects I have worked on.",
-            side: "left",
-            align: "start",
-          },
-        },
-        {
-          element: "#resume_id",
-          popover: {
-            title: "Resume",
-            description: "Check out my resume for more details.",
-            side: "top",
-            align: "start",
-          },
-        },
-        {
-          element: "#contact_id",
-          popover: {
-            title: "Contact",
-            description: "Get in touch with me through this page.",
-            side: "right",
-            align: "start",
-          },
-        },
-        {
-          popover: {
-            title: "Welcome!",
-            description:
-              "Feel free to explore the rest of my portfolio. Enjoy your visit!",
-          },
-        },
+        // Other steps
       ],
     });
 
@@ -89,48 +37,57 @@ const Sidebar = () => {
         <div className="nav__menu">
           <ul className="nav__list">
             <li className={`nav__item ${isActive("/")}`}>
-              <Link to="/" className="nav__link" id="home_id" >
-                <i className="icon-home" title="Home" ></i>
+              <Link to="/" className="nav__link" id="home_id">
+                <i className="icon-home"></i>
+                <div className="tooltip">Home</div>
               </Link>
             </li>
             <li className={`nav__item ${isActive("/about")}`}>
               <Link to="/about" className="nav__link" id="about_id">
-                <i className="icon-user-following" title="About me"></i>
+                <i className="icon-user-following"></i>
+                <div className="tooltip">About Me</div>
               </Link>
             </li>
             <li className={`nav__item ${isActive("/education")}`}>
               <Link to="/education" className="nav__link" id="education_id">
-                <i className="icon-graduation" title="Education"></i>
+                <i className="icon-graduation" ></i>
+                <div className="tooltip">Education</div>
               </Link>
             </li>
             <li className={`nav__item ${isActive("/projects")}`}>
               <Link to="/projects" className="nav__link" id="projects_id">
-                <i className="icon-layers" title="Projects"></i>
+                <i className="icon-layers"></i>
+                <div className="tooltip">Projects</div>
               </Link>
             </li>
             <li className={`nav__item ${isActive("/resume")}`}>
               <Link to="/resume" className="nav__link" id="resume_id">
-                <i className="icon-briefcase" title="Resume"></i>
+                <i className="icon-briefcase" ></i>
+                <div className="tooltip">Resume</div>
               </Link>
             </li>
             <li className={`nav__item ${isActive("/contact")}`}>
               <Link to="/contact" className="nav__link" id="contact_id">
-                <i className="icon-bubble" title="Contact me"></i>
+                <i className="icon-bubble"></i>
+                <div className="tooltip">Contact Me</div>
               </Link>
             </li>
             <li className={`nav__item ${isActive("/play")} play__component`}>
-              <Link to="/play" className="nav__link " id="play_id" title="Play area">
+              <Link to="/play" className="nav__link" id="play_id">
                 <div className="three-body">
                   <div className="three-body__dot"></div>
                   <div className="three-body__dot"></div>
                   <div className="three-body__dot"></div>
                 </div>
+                <div className="tooltip">Play Area</div>
               </Link>
             </li>
-            <li className={`nav__item`}>
-              <ThemeToggle />
+            <li>
+              <div className="theme-toggle">
+                <ThemeToggle />
+                <div className="tooltip">Theme</div>
+              </div>
             </li>
-
           </ul>
         </div>
       </nav>
