@@ -89,7 +89,7 @@ export const experiences = [
   {
     role: "MERN Developer",
     company: "Alois Solutions",
-    date: "Sept 2024 - Present",
+    date: "Aug 2024 - Present",
     description: "",
     skills: ["React.js", "Express.js", "Node.js", "MongoDB", "Bootstrap"],
   },
