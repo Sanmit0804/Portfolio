@@ -128,3 +128,7 @@ a {
 .content a{
   color: black;
 }
+
+.school:hover{
+  color: rgb(84, 84, 84);
+}

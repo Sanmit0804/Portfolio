@@ -17,7 +17,7 @@ function Education() {
           </div>
           <div className="content">
             <h2>
-              <a href="https://www.svitvasad.ac.in/" target="_blank">
+              <a className="school" href="https://www.svitvasad.ac.in/" target="_blank">
                 Sardar Vallabhbhai Patel Institute of Technology, Vasad
               </a>
             </h2>
@@ -25,7 +25,7 @@ function Education() {
             <p className="education__font">{education[0].grade}</p>
             <p className="education__font">{education[0].date}</p>
             <h2>
-              <a href="https://www.parthinstitute.org/" target="_blank">
+              <a className="school" href="https://www.parthinstitute.org/" target="_blank">
                 Parth School, Vadodara
               </a>
             </h2>
@@ -33,7 +33,7 @@ function Education() {
             <p className="education__font">{education[1].grade}</p>
             <p className="education__font">{education[1].date}</p>
             <h2>
-              <a href="https://utkarshvidyalaya.org/" target="_blank">
+              <a className="school" href="https://utkarshvidyalaya.org/" target="_blank">
                 Utkarsh Vidhyalaya, Vadodara
               </a>
             </h2>
