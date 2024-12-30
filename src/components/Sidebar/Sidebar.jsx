@@ -24,7 +24,60 @@ const Sidebar = () => {
             align: "start",
           },
         },
-        // Other steps
+        {
+          element: "#about_id",
+          popover: {
+            title: "About Me",
+            description: "Learn more about me and my background.",
+            side: "left",
+            align: "start",
+          },
+        },
+        {
+          element: "#education_id",
+          popover: {
+            title: "Education",
+            description: "View my educational qualifications.",
+            side: "left",
+            align: "start",
+          },
+        },
+        {
+          element: "#projects_id",
+          popover: {
+            title: "Projects",
+            description: "Explore the projects I have worked on.",
+            side: "left",
+            align: "start",
+          },
+        },
+        {
+          element: "#resume_id",
+          popover: {
+            title: "Resume",
+            description: "Access my professional resume.",
+            side: "left",
+            align: "start",
+          },
+        },
+        {
+          element: "#contact_id",
+          popover: {
+            title: "Contact Me",
+            description: "Reach out to me for collaboration or inquiries.",
+            side: "left",
+            align: "start",
+          },
+        },
+        {
+          element: "#play_id",
+          popover: {
+            title: "Play Area",
+            description: "Discover some fun and experimental features.",
+            side: "left",
+            align: "start",
+          },
+        },
       ],
     });
 
@@ -50,7 +103,7 @@ const Sidebar = () => {
             </li>
             <li className={`nav__item ${isActive("/education")}`}>
               <Link to="/education" className="nav__link" id="education_id">
-                <i className="icon-graduation" ></i>
+                <i className="icon-graduation"></i>
                 <div className="tooltip">Education</div>
               </Link>
             </li>
@@ -62,7 +115,7 @@ const Sidebar = () => {
             </li>
             <li className={`nav__item ${isActive("/resume")}`}>
               <Link to="/resume" className="nav__link" id="resume_id">
-                <i className="icon-briefcase" ></i>
+                <i className="icon-briefcase"></i>
                 <div className="tooltip">Resume</div>
               </Link>
             </li>
