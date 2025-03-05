@@ -39,7 +39,7 @@
 }
 
 .home__img:hover {
-  box-shadow: rgba(255, 255, 0, 0.56) 0px 22px 70px 4px;
+  box-shadow: rgba(130, 139, 131, 0.56) 0px 22px 70px 4px;
   cursor: pointer;
 }
 
