@@ -18,7 +18,7 @@ import { SiExpress } from "react-icons/si";
 import { FaGithub } from "react-icons/fa";
 import { SiLeetcode } from "react-icons/si";
 import { FaLinkedin } from "react-icons/fa";
-
+import ScrollReveal from 'scrollreveal';
 import { IconCloud } from "./IconCloud";
 
 
@@ -54,7 +54,7 @@ const About = () => {
             <div className="about__info">
               <p className="about__about">
                 Hii..!! <span className="wave">👋🏻</span> <span className="highlight__text">Sanmit</span> here,
-                Computer Engineering student with a passion for coding and
+                Computer Engineering graduate with a passion for coding and
                 problem-solving, from{" "}
                 <span className="highlight__text">India.</span>
               </p>
@@ -151,7 +151,7 @@ const About = () => {
         </div>
       </div>
       <div className="iconcloud">
-      <IconCloudDemo/>
+      {/* <IconCloudDemo/> */}
       </div>
 
       </section>
