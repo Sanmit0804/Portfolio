@@ -2,22 +2,69 @@ import React, { useState, useEffect } from "react";
 import Spline from "@splinetool/react-spline";
 import "./Play.css";
 
-// Preloader function to fetch or prepare data before rendering the Play component
+// Error Boundary Component
+class SplineErrorBoundary extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = { hasError: false };
+  }
+
+  static getDerivedStateFromError(error) {
+    return { hasError: true };
+  }
+
+  componentDidCatch(error, errorInfo) {
+    console.error("Spline Error:", error, errorInfo);
+  }
+
+  render() {
+    if (this.state.hasError) {
+      return (
+        <div className="spline-fallback">
+          <h3>Play area Unavailable</h3>
+          <p>We couldn't load the interactive 3D Play area. This might be due to network restrictions.</p>
+          <button 
+            className="retry-button btn" 
+            style={{ marginTop: '1rem'}}
+            onClick={() => this.setState({ hasError: false })}
+          >
+            Try Again
+          </button>
+        </div>
+      );
+    }
+
+    return this.props.children;
+  }
+}
+
 export const playPreLoader = async () => {
-  // Simulate fetching or loading the Spline scene data
-  const sceneUrl = "/scene.splinecode"; // Replace with the actual URL if needed
-  return sceneUrl;
+  try {
+    const sceneUrl = "/scene.splinecode";
+    if (!sceneUrl) {
+      throw new Error("Scene URL not found");
+    }
+    return sceneUrl;
+  } catch (error) {
+    console.error("Error loading scene:", error);
+    throw error;
+  }
 };
 
 function Play() {
   const [sceneUrl, setSceneUrl] = useState(null);
   const [isLoading, setIsLoading] = useState(true);
+  const [error, setError] = useState(null);
 
   useEffect(() => {
-    // Load the scene before rendering
     const loadScene = async () => {
-      const url = await playPreLoader();
-      setSceneUrl(url);
+      try {
+        const url = await playPreLoader();
+        setSceneUrl(url);
+      } catch (err) {
+        setError("Failed to load scene data. Please try again.");
+        setIsLoading(false);
+      }
     };
 
     loadScene();
@@ -25,76 +72,42 @@ function Play() {
 
   const handleLoad = () => {
     setIsLoading(false);
+    setError(null);
+  };
+
+  const handleError = () => {
+    setError("Failed to load 3D content. This might be due to network restrictions.");
+    setIsLoading(false);
   };
 
   return (
     <section className="play" id="play">
-      {isLoading && (
+      {isLoading && !error && (
         <div className="loading_animation">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
-            <circle
-              fill="var(--first-color)"
-              stroke="var(--first-color)"
-              strokeWidth="15"
-              r="15"
-              cx="40"
-              cy="100"
-            >
-              <animate
-                attributeName="opacity"
-                calcMode="spline"
-                dur="2s"
-                values="1;0;1;"
-                keySplines=".5 0 .5 1;.5 0 .5 1"
-                repeatCount="indefinite"
-                begin="-.4s"
-              />
-            </circle>
-            <circle
-              fill="var(--first-color)"
-              stroke="var(--first-color)"
-              strokeWidth="15"
-              r="15"
-              cx="100"
-              cy="100"
-            >
-              <animate
-                attributeName="opacity"
-                calcMode="spline"
-                dur="2s"
-                values="1;0;1;"
-                keySplines=".5 0 .5 1;.5 0 .5 1"
-                repeatCount="indefinite"
-                begin="-.2s"
-              />
-            </circle>
-            <circle
-              fill="var(--first-color)"
-              stroke="var(--first-color)"
-              strokeWidth="15"
-              r="15"
-              cx="160"
-              cy="100"
-            >
-              <animate
-                attributeName="opacity"
-                calcMode="spline"
-                dur="2s"
-                values="1;0;1;"
-                keySplines=".5 0 .5 1;.5 0 .5 1"
-                repeatCount="indefinite"
-                begin="0s"
-              />
-            </circle>
-          </svg>
-          <p>Please wait...</p>
-          </div>
+          Loading...
+        </div>
       )}
-      {sceneUrl && (
-        <Spline
-          scene={sceneUrl}
-          onLoad={handleLoad} // Triggered when the Spline scene is fully loaded
-        />
+      
+      {error && (
+        <div className="error-container">
+          <p className="error-message">{error}</p>
+          <button 
+            className="retry-button btn" 
+            onClick={() => window.location.reload()}
+          >
+            Refresh Page
+          </button>
+        </div>
+      )}
+
+      {sceneUrl && !error && (
+        <SplineErrorBoundary>
+          <Spline 
+            scene={sceneUrl} 
+            onLoad={handleLoad}
+            onError={handleError}
+          />
+        </SplineErrorBoundary>
       )}
     </section>
   );

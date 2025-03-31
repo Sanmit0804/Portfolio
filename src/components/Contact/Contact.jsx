@@ -142,7 +142,7 @@ function Contact() {
                 <form className="form">
                   <div className="group">
                     <input placeholder="‎" type="text" required="" />
-                    <label for="name">Name</label>
+                    <label htmlFor="name">Name</label>
                   </div>
                   <div className="group">
                     <input
@@ -152,7 +152,7 @@ function Contact() {
                       name="email"
                       required=""
                     />
-                    <label for="email">Email</label>
+                    <label htmlFor="email">Email</label>
                   </div>
                   <div className="group">
                     <textarea
@@ -162,7 +162,7 @@ function Contact() {
                       rows="5"
                       required=""
                     ></textarea>
-                    <label for="comment">Comment</label>
+                    <label htmlFor="comment">Comment</label>
                   </div>
                   <button type="submit" className="btn submit__button"  disabled >
                     Submit
