@@ -26,7 +26,8 @@ class SplineErrorBoundary extends React.Component {
           <button 
             className="retry-button btn" 
             style={{ marginTop: '1rem'}}
-            onClick={() => this.setState({ hasError: false })}
+            // onClick={() => this.setState({ hasError: false })}
+            onClick={()=> window.location.reload()}
           >
             Try Again
           </button>
@@ -63,12 +64,13 @@ function Play() {
         setSceneUrl(url);
       } catch (err) {
         setError("Failed to load scene data. Please try again.");
+      } finally {
         setIsLoading(false);
       }
     };
-
+  
     loadScene();
-  }, []);
+  }, []);  
 
   const handleLoad = () => {
     setIsLoading(false);
