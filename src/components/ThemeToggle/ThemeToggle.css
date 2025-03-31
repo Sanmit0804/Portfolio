@@ -4,11 +4,14 @@
   margin-right: 0.5rem;
   margin-top: 0.6rem;
   --color: var(--text-color);
-  --size: 25px;
+  --size: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
-  position: relative;
+  position: fixed;
+  top: 0.8125rem;
+  right: 7.5rem;
+  z-index: 1000; 
   cursor: pointer;
   font-size: var(--size);
   user-select: none;
@@ -53,5 +56,15 @@
 
   75% {
     transform: rotate(25deg);
+  }
+}
+
+
+/* For Mobile view  */
+@media (max-width: 800px)
+{
+  .theme_container{
+    top: 0.7125rem;
+    right: 7rem;
   }
 }

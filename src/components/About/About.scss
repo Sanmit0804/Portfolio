@@ -1,7 +1,7 @@
 .about {
   position: relative;
   min-height: 100vh;
-  font-size: 20px;
+  font-size: large;
 }
 
 @media (max-width: 800px) {
@@ -31,7 +31,6 @@
 
 .about__info {
   text-align: left; /* Default alignment */
-  padding: 0 1rem; /* Add padding to avoid touching edges */
 }
 
 @media (max-width: 768px) {
@@ -50,7 +49,6 @@
 
   .about__info {
     text-align: justify; /* Center-align text when image is hidden */
-    padding: 0 1rem; /* Add horizontal padding */
   }
 }
 
@@ -64,7 +62,7 @@
   .about__about {
     text-align: justify; /* Center-align text on mobile */
     padding: 0 1rem; /* Add horizontal padding */
-    font-size: 15px;
+    font-size: small;
   }
 }
 

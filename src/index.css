@@ -109,6 +109,7 @@
 
 html {
   scroll-behavior: smooth;
+  user-select: none;
 }
 
 body,
@@ -192,12 +193,26 @@ img {
 .btn {
   padding: 0.75rem 2rem;
   line-height: 1;
-  border-radius: 1.875rem;
+  border-radius: 0.375rem;  /* inspired by bootstrap*/
   box-shadow: 0 0 1px rgb(0 0 0/0%);
   color: #fff;
   display: inline-block;
   background-color: var(--first-color);
   font-weight: var(--font-bold);
+}
+
+@media (max-width: 800px)
+{
+  .btn {
+    padding: 0.55rem 1rem;
+    line-height: 1;
+    border-radius: 0.375rem;  /* inspired by bootstrap*/
+    box-shadow: 0 0 1px rgb(0 0 0/0%);
+    color: #fff;
+    display: inline-block;
+    background-color: var(--first-color);
+    font-weight: var(--font-medium);
+  }  
 }
 
 @keyframes button-push {

@@ -26,7 +26,7 @@
 }
 
 .nav__link {
-  font-size: 1.2rem;
+  font-size: large;
   color: var(--title-color);
   font-weight: var(--font-bold);
   transition: 0.3s;
@@ -67,12 +67,12 @@
 
   .nav__list {
     flex-direction: row;
-    column-gap: 2.5rem;
+    column-gap: 2rem;
     row-gap: 0;
   }
 
   .nav__link {
-    font-size: 1rem;
+    font-size: small;
   }
 
   .nav__logo,
@@ -108,7 +108,7 @@
   padding: 0.5rem 1rem;
   background-color: var(--body-color);
   color: var(--text-color);
-  font-size: 0.875rem;
+  font-size: small;
   border-radius: 6px;
   white-space: nowrap;
   opacity: 0;
