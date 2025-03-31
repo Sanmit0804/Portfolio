@@ -26,8 +26,8 @@ class SplineErrorBoundary extends React.Component {
           <button 
             className="retry-button btn" 
             style={{ marginTop: '1rem'}}
-            // onClick={() => this.setState({ hasError: false })}
-            onClick={()=> window.location.reload()}
+            onClick={() => this.setState({ hasError: false })}
+            // onClick={()=> window.location.reload()}
           >
             Try Again
           </button>
