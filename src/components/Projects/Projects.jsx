@@ -2,9 +2,11 @@ import React, { useState } from "react";
 import "./Projects.css";
 import { projects } from "../../data";
 import Card from "./Card";
+import useDeviceType from "../../hooks/useDeviceType";
 
 const Projects = () => {
   const [filter, setFilter] = useState("all"); // Default to show all projects
+  const device = useDeviceType();
 
   // Function to handle filtering
   const filteredProjects = () => {
@@ -33,11 +35,14 @@ const Projects = () => {
           Here are a few projects I've worked on recently
         </h4>
       </div>
-      <div className="radio project_types">
-        <input defaultChecked defaultValue="other"  name="type" id="all" type="radio" label="All" onClick={() => setFilter("all")} />
-        <input  defaultValue="male" name="type" id="major" type="radio" label="Major Projects" onClick={() => setFilter("major")} />
-        <input defaultValue="female" name="type" id="minor" type="radio" label="Minor Projects"  onClick={() => setFilter("minor")}/>
-      </div>
+      {
+        device != 'mobile' &&
+        <div className="radio project_types">
+          <input defaultChecked defaultValue="other" name="type" id="all" type="radio" label="All" onClick={() => setFilter("all")} />
+          <input defaultValue="male" name="type" id="major" type="radio" label="Major Projects" onClick={() => setFilter("major")} />
+          <input defaultValue="female" name="type" id="minor" type="radio" label="Minor Projects" onClick={() => setFilter("minor")} />
+        </div>
+      }
       <div className="project__container grid">
         {filteredProjects().map((project, index) => (
           <Card project={project} key={index} />

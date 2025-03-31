@@ -38,9 +38,16 @@ body {
   .project__container {
     grid-template-columns: 1fr;
     padding: 0;
-    width: 60%;
+    width: 80%;
     margin: auto;
   }
+
+  .section__title {
+    text-align: center;
+    font-size: 1.5rem;
+    color: var(--title-color);
+  }
+
 }
 
 .project__card {
@@ -107,7 +114,7 @@ body {
 }
 
 .project__dot {
-  font-size: 14px;
+  font-size: small;
   color: rgb(110, 110, 253);
   margin-bottom: 1rem;
   padding: 3px;
@@ -120,7 +127,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  column-gap: 2rem;
+  column-gap: 1.5rem;
 }
 
 /* Options for Project types */

@@ -1,11 +1,23 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./Education.css";
 import { education } from "../../data";
+import useDeviceType from "../../hooks/useDeviceType";
 
 // For future updates
 // https://nodlik.github.io/react-pageflip/
 
 function Education() {
+  const [descVisible, setDesVisible] = useState(true);
+  const device = useDeviceType();
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setDesVisible(false);
+    }, 4000);
+
+    return () => clearTimeout(timer);
+  }, []);
+
   return (
     <>
       <section id="education">
@@ -41,6 +53,12 @@ function Education() {
             <p className="education__font">{education[2].grade}</p>
             <p className="education__font">{education[2].date}</p>
           </div>
+          {descVisible && device == 'mobile' &&
+            <div style={{
+              textAlign: 'center',
+              paddingTop: '1rem'
+            }}>Click above</div>
+          }
         </div>
       </section>
     </>

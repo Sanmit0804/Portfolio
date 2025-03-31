@@ -37,7 +37,7 @@ const Sidebar = () => {
           element: "#education_id",
           popover: {
             title: "Education",
-            description: "View my educational qualifications.",
+            description: "View my educational qualifications. (Hover on book to view more)",
             side: "left",
             align: "start",
           },
@@ -135,11 +135,11 @@ const Sidebar = () => {
                 <div className="tooltip">Play Area</div>
               </Link>
             </li>
-            <li>
-              <div className="theme-toggle">
-                <ThemeToggle />
+            <li className={`nav__item`}>
+              <Link className="nav__link" >
+                {/* <ThemeToggle /> */}
                 <div className="tooltip">Theme</div>
-              </div>
+              </Link>
             </li>
           </ul>
         </div>

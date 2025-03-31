@@ -19,6 +19,7 @@ import LoadingBar from "react-top-loading-bar";
 import PreLoader from "./components/PreLoader/PreLoader";
 import ColorPicker from "./components/ColorPicker/ColorPicker";
 import GitHubStar from "./components/GitHubStar/GitHubStar";
+import ThemeToggle from "./components/ThemeToggle/ThemeToggle";
 
 
 const pageVariants = {
@@ -176,6 +177,7 @@ function App() {
     ) : (
       <Router>
       <ColorPicker/>
+      <ThemeToggle/>
       <GitHubStar/>
           <LoadingBar
           color="var(--first-color)"

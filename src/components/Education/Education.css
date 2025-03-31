@@ -38,24 +38,10 @@ a {
   transition: all 1s ease;
 }
 
-@media (min-width: 400px) {
-  .card {
+@media (max-width: 400px) {
+  .card__education {
     width: 250px; /* Adjust width for medium screens */
     height: 350px; /* Adjust height for medium screens */
-  }
-}
-
-@media (min-width: 600px) {
-  .card {
-    width: 300px; /* Adjust width for medium screens */
-    height: 400px; /* Adjust height for medium screens */
-  }
-}
-
-@media (min-width: 900px) {
-  .card {
-    width: 350px; /* Adjust width for larger screens */
-    height: 450px; /* Adjust height for larger screens */
   }
 }
 
