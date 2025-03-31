@@ -4,10 +4,11 @@ import "./Sidebar.css";
 import { driver } from "driver.js";
 import "driver.js/dist/driver.css";
 import ThemeToggle from "../ThemeToggle/ThemeToggle";
+import useDeviceType from '../../hooks/useDeviceType';
 
 const Sidebar = () => {
   const location = useLocation();
-
+  const device = useDeviceType();
   const isActive = (path) => (location.pathname === path ? "active" : "");
 
   useEffect(() => {
@@ -92,37 +93,37 @@ const Sidebar = () => {
             <li className={`nav__item ${isActive("/")}`}>
               <Link to="/" className="nav__link" id="home_id">
                 <i className="icon-home"></i>
-                <div className="tooltip">Home</div>
+                <div className={`${device == 'mobile' ? 'd-none' : 'tooltip'}`}>Home</div>
               </Link>
             </li>
             <li className={`nav__item ${isActive("/about")}`}>
               <Link to="/about" className="nav__link" id="about_id">
                 <i className="icon-user-following"></i>
-                <div className="tooltip">About Me</div>
+                <div  className={`${device == 'mobile' ? 'd-none' : 'tooltip'}`}>About Me</div>
               </Link>
             </li>
             <li className={`nav__item ${isActive("/education")}`}>
               <Link to="/education" className="nav__link" id="education_id">
                 <i className="icon-graduation"></i>
-                <div className="tooltip">Education</div>
+                <div  className={`${device == 'mobile' ? 'd-none' : 'tooltip'}`}>Education</div>
               </Link>
             </li>
             <li className={`nav__item ${isActive("/projects")}`}>
               <Link to="/projects" className="nav__link" id="projects_id">
                 <i className="icon-layers"></i>
-                <div className="tooltip">Projects</div>
+                <div  className={`${device == 'mobile' ? 'd-none' : 'tooltip'}`}>Projects</div>
               </Link>
             </li>
             <li className={`nav__item ${isActive("/resume")}`}>
               <Link to="/resume" className="nav__link" id="resume_id">
                 <i className="icon-briefcase"></i>
-                <div className="tooltip">Resume</div>
+                <div  className={`${device == 'mobile' ? 'd-none' : 'tooltip'}`}>Resume</div>
               </Link>
             </li>
             <li className={`nav__item ${isActive("/contact")}`}>
               <Link to="/contact" className="nav__link" id="contact_id">
                 <i className="icon-bubble"></i>
-                <div className="tooltip">Contact Me</div>
+                <div  className={`${device == 'mobile' ? 'd-none' : 'tooltip'}`}>Contact Me</div>
               </Link>
             </li>
             <li className={`nav__item ${isActive("/play")} play__component`}>
@@ -132,13 +133,13 @@ const Sidebar = () => {
                   <div className="three-body__dot"></div>
                   <div className="three-body__dot"></div>
                 </div>
-                <div className="tooltip">Play Area</div>
+                <div  className={`${device == 'mobile' ? 'd-none' : 'tooltip'}`}>Play Area</div>
               </Link>
             </li>
             <li className={`nav__item`}>
               <Link className="nav__link" >
                 {/* <ThemeToggle /> */}
-                <div className="tooltip">Theme</div>
+                <div  className={`${device == 'mobile' ? 'd-none' : 'tooltip'}`}>Theme</div>
               </Link>
             </li>
           </ul>

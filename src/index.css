@@ -228,6 +228,10 @@ img {
   animation: button-push 0.7s linear 1;
 }
 
+.d-none{
+  display: none;
+}
+
 /* ========== Bounce Characters =========== */
 
 .bounce-text span {
