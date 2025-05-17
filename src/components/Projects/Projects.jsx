@@ -1,8 +1,9 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./Projects.css";
 import { projects } from "../../data";
 import Card from "./Card";
 import useDeviceType from "../../hooks/useDeviceType";
+import CommonActions from "../../commonActions";
 
 const Projects = () => {
   const [filter, setFilter] = useState("all"); // Default to show all projects
@@ -17,6 +18,10 @@ const Projects = () => {
     }
     return projects; // Show all projects by default
   };
+
+  useEffect(() => {
+    CommonActions.scrollToTop();
+  }, [])
 
   return (
     <section className="project container section" id="projects">

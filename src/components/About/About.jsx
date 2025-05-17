@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import "./About.scss";
 import Image from "/programmer.jpg";
 import { Bio, skills } from "../../data";
+import CommonActions from "../../commonActions";
 
 // Skills
 import { RiReactjsLine } from "react-icons/ri";
@@ -24,6 +25,7 @@ import { IconCloud } from "./IconCloud";
 
 const About = () => {
   useEffect(() => {
+    CommonActions.scrollToTop();
     const scrollReveal = ScrollReveal({
       reset: true,
       distance: "60px",
@@ -87,7 +89,7 @@ const About = () => {
             </div>
           ))}
         </div>  */}
-       
+
 
 
         <div className="about__skills grid">
@@ -116,43 +118,43 @@ const About = () => {
 
 
         <div className="about__skills grid">
-        <h1>Technologies</h1>
-        <div className="icons__container">
-          <div className="icons__skills" title="HTML" style={{ color: "#E34F26" }}>
-            <FaHtml5 />
-          </div>
-          <div className="icons__skills" title="CSS" style={{ color: "#1572B6" }}>
-            <FaCss3Alt />
-          </div>
-          <div className="icons__skills" title="JavaScript" style={{ color: "#F7DF1E" }}>
-            <IoLogoJavascript />
-          </div>
-          {/*         <div className="icons__skills" style={{ color: "#38B2AC" }}>
+          <h1>Technologies</h1>
+          <div className="icons__container">
+            <div className="icons__skills" title="HTML" style={{ color: "#E34F26" }}>
+              <FaHtml5 />
+            </div>
+            <div className="icons__skills" title="CSS" style={{ color: "#1572B6" }}>
+              <FaCss3Alt />
+            </div>
+            <div className="icons__skills" title="JavaScript" style={{ color: "#F7DF1E" }}>
+              <IoLogoJavascript />
+            </div>
+            {/*         <div className="icons__skills" style={{ color: "#38B2AC" }}>
             <RiTailwindCssFill />
           </div>   */}
-          <div className="icons__skills" title="React.js" style={{ color: "#61DAFB" }}>
-            <RiReactjsLine />
-          </div>
-          <div className="icons__skills" title="Node.js" style={{ color: "#339933" }}>
-            <FaNodeJs />
-          </div>
-          <div className="icons__skills" title="Express.js" style={{ color: "grey" }}>
-            <SiExpress />
-          </div>
-          <div className="icons__skills" title="MongoDB" style={{ color: "#47A248" }}>
-            <SiMongodb />
-          </div>
-          <div className="icons__skills" title="SQL" style={{ color: "#00758F" }}>
-            <TbBrandMysql />
-          </div>
-          <div className="icons__skills" title="Java" style={{ color: "orange" }}>
-            <FaJava />
+            <div className="icons__skills" title="React.js" style={{ color: "#61DAFB" }}>
+              <RiReactjsLine />
+            </div>
+            <div className="icons__skills" title="Node.js" style={{ color: "#339933" }}>
+              <FaNodeJs />
+            </div>
+            <div className="icons__skills" title="Express.js" style={{ color: "grey" }}>
+              <SiExpress />
+            </div>
+            <div className="icons__skills" title="MongoDB" style={{ color: "#47A248" }}>
+              <SiMongodb />
+            </div>
+            <div className="icons__skills" title="SQL" style={{ color: "#00758F" }}>
+              <TbBrandMysql />
+            </div>
+            <div className="icons__skills" title="Java" style={{ color: "orange" }}>
+              <FaJava />
+            </div>
           </div>
         </div>
-      </div>
-      <div className="iconcloud">
-      {/* <IconCloudDemo/> */}
-      </div>
+        <div className="iconcloud">
+          {/* <IconCloudDemo/> */}
+        </div>
 
       </section>
     </>

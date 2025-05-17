@@ -4,6 +4,7 @@ import "./CopyButton.css";
 import { Bio } from "../../data";
 import { FaCopy } from "react-icons/fa";
 import HeaderSocials from "../Home/HeaderSocials";
+import CommonActions from "../../commonActions";
 
 const copyToClipboard = (text, setCopyStatus) => {
   navigator.clipboard.writeText(text).then(
@@ -32,6 +33,10 @@ function Contact() {
   //     document.body.removeChild(script);
   //   };
   // }, []);
+
+  useEffect(() => {
+    CommonActions.scrollToTop();
+  },[])
 
   const [copyStatus, setCopyStatus] = useState(false);
 
