@@ -87,9 +87,16 @@ export const skills = [
 
 export const experiences = [
   {
-    role: "MERN Developer",
-    company: "Alois Solutions",
-    date: "Sept 2024 - Present",
+    role: "Associate Software Engineer",
+    company: "ALOIS Solutions (AKINO LABS)",
+    date: "Apr 2025 - Present",
+    description: "",
+    skills: ["React.js", "Express.js", "Node.js", "MongoDB", "Bootstrap"],
+  },
+  {
+    role: "MERN Developer - Intern",
+    company: "ALOIS Solutions",
+    date: "Oct 2024 - Mar 2025",
     description: "",
     skills: ["React.js", "Express.js", "Node.js", "MongoDB", "Bootstrap"],
   },
