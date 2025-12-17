@@ -141,6 +141,15 @@ export const education = [
 
 export const projects = [
   {
+    title: "Dream Click",
+    description: "A full-stack media-sharing platform for high-resolution photos, sample videos, and paid VN editing templates.",
+    image: "/projects/DreamClick.png",
+    tags: ["MongoDB", "Express.js", "React.js", "Node.js", "Tailwind CSS", "ShadCn UI", "JWT", "Razorpay", "AWS s3"],
+    demo: "https://github.com/Sanmit0804/DreamClick",
+    code: "https://github.com/Sanmit0804/DreamClick",
+    major: true,
+  },
+  {
     title: "Foodie",
     description: `A full-featured food delivery application offering user registration, authentication, and seamless order management.`,
     image: "/projects/Foodie.png",
