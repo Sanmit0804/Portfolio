@@ -1,6 +1,7 @@
 import React from "react";
 import "./Resume.scss";
-import pdf from "/Sanmit_Resume.pdf";
+// import pdf from "/Sanmit_Resume.pdf";
+import pdf from "/Drashti_Resume_1.pdf";
 import { experiences } from "../../data";
 
 const Resume = () => {
